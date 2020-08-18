@@ -1,0 +1,4551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="python_mesaj">
+        <item>
+Python programlama dili, Guido Van Rossum tarafından oluşturuldu ve 1991\'de piyasaya sürüldü. Python öğrenilmesi çok kolay  sade bir programlama dilidir.
+Python Nesne Tabanlı, yorumsal, modüler ve etkileşimli, yüksek seviyeli bir dildir.  Hala bir sebep mi arıyorsunuz öğrenmek için; Çünkü Python son yıllarda dünyanın en popüler programlama dili.\n\n
+
+Kullanım Alanları :\n\n
+
+- Web geliştirme (Sunucu Tarafı)\n
+- Yazılım geliştirme\n
+- Matematik, istatistik ve hesaplamalar\n
+- Sistem komut dosyası oluşturma\n\n
+
+Hadi sözü uzatmadan ilk kodumuzu yazalım ve ne kadar sade, kolay bir dil olduğunu görelim;\n\n
+
+"helloworld.py", python dosyamızı bir IDE (Tümleşik Geliştirme Ortamı) ile oluşturalım.\n
+Herhangi bir metin düzenleyicide yapılabilen helloworld.py adlı ilk Python dosyamızı yazalım;\n\n\n
+
+print("Hello, World!")\n\n
+
+
+OUTPUT (Program Çıktısı):\n
+>> Hello, World!
+        </item>
+        <item>
+            - Değişkenler, veri değerlerini depolamak için kullanılan yapılardır.\n
+Diğer programlama dillerinin aksine, Python\'un bir değişken bildirme komutu yoktur.\n
+Değişkene ilk değer atadığınız anda bir değişken oluşturulur.\n\n
+
+Örnek:\n
+x = 5\n
+y = "Matematik"\n
+print(x)\n
+print(y)\n\n
+
+OUTPUT:\n
+>> 5\n
+>> Matematik\n\n
+
+- Değişkenlerin belirli bir türle bildirilmesi gerekmez ve ayarlandıktan sonra türü bile değiştirebilirler.\n\n
+
+Örnek:\n
+("#" işareti kodlama yaparken yorum satırı yazmamızı sağlar, kodsal bir karşılığı yoktur yalnızca bilgi verir.)\n\n
+
+x = 4  # x burada int veri türündendir\n
+x = "Cebir" # x değişkenine tekrar değer atanmıştır ve türü str (string) olmuştur\n
+print(x)\n\n
+
+OUTPUT:\n
+>> Cebir\n\n\n
+
+
+- Dize (String) değişkenleri tek veya çift tırnak kullanılarak bildirilebilir:\n\n
+
+Örnek:\n\n
+
+x = "Python"\n
+# ikisi de aynıdır\n
+x = \'Python\'\n\n\n\n
+
+
+
+DEĞİŞKEN İSİMLENDİRME:\n\n
+
+Bir değişkenin kısa adı (x ve y gibi) veya daha açıklayıcı bir adı olabilir ve anlaşılır olması her zaman önerilir (yaş, araba adı, toplam_hacim). Python değişkenleri için kurallar:\n\n
+
+    Değişken adı bir harf veya alt çizgi karakteriyle başlamalıdır\n
+    Değişken adı bir sayı ile başlayamaz\n
+    Değişken adı yalnızca alfasayısal karakterler ve alt çizgiler içerebilir (A-z, 0-9 ve _)\n
+    Değişken adları büyük / küçük harfe duyarlıdır (yaş, Yaş ve AGE üç farklı değişkendir)\n\n
+
+Örnek:\n\n
+
+#Geçerli değişken isimlendirmeleri:\n
+myvar = "Geçerli"\n
+my_var = "Geçerli"\n
+_my_var = "Geçerli"\n
+myVar = "Geçerli"\n
+MYVAR = "Geçerli"\n
+myvar2 = "Geçerli"\n\n
+
+#Geçersiz değişken isimlendirmeleri:\n
+2myvar = "Geçersiz"\n
+my-var = "Geçersiz"\n
+my var = "Geçersiz"\n\n\n
+
+
+Birden Çok Değişkene Değer Atama:\n\n
+
+Örnek:\n\n
+
+# Sırayla atama yapılır.\n
+x, y, z = "Portakal", "Muz", "Çilek"       # x = "Portakal", y = "MUz" , y = "Çilek" ile aynıdır.\n\n
+
+print(x)\n
+print(y)\n
+print(z)\n\n
+
+OUTPUT:\n
+>> Portakal\n
+>> Muz\n
+>> Çilek\n\n\n
+
+
+Ayrıca aynı değeri bir satırda birden çok değişkene atayabilirsiniz:\n\n
+
+Örnek:\n\n
+
+x = y = z = "Portakal  # Bütün değişkenlere aynı değer atanır.\n
+print(x)\n
+print(y)\n
+print(z)\n\n\n
+
+
+OUTPUT:\n
+>> Portakal\n
+>> Portakal\n
+>> Portakal\n\n\n
+
+
+Çıktı Değişkenleri:\n\n
+
+Python print deyimi genellikle değişkenleri yazdırmak için kullanılır.\n
+Hem metni hem de değişkeni birleştirmek için Python "+" karakterini kullanır\n\n
+
+Örnek:\n\n
+
+x = "harika"\n
+print("Python gerçekten" + x)\n\n
+
+OUTPUT:\n
+>> Python gerçekten harika\n\n
+
+Örnek:\n\n
+
+x = "popüler"\n
+print("Python " + x " bir programlama dili.")\n\n
+
+OUTPUT:\n
+>> Python popüler bir programlama dili.\n\n\n
+
+
+Değişkenleri birbirleriyle birleştirme:\n\n
+
+Örnek:\n\n
+
+x = "Python "\n
+y = "öğreniyorum"\n
+z =  x + y   # x ile y değişkeni birleştirilip z değişkenine atama yapılıyor.\n
+print(z)\n\n
+
+OUTPUT:\n
+>> Python öğreniyorum\n\n
+
+Sayısal değerler de birbiriyle aynı şekilde toplanır.\n\n
+
+Örnek:\n\n
+
+x = 5\n
+y = 10\n
+print(x + y)\n\n
+
+OUTPUT:\n
+>> 15\n\n
+
+
+Bir dizeyi (String) ve bir sayıyı (Number) birleştirmeye çalışırsanız, Python size bir hata verecektir:\n\n
+
+Örnek:\n\n
+
+x = 3\n
+y = "Python"\n
+print(x + y)\n\n
+
+OUTPUT:\n
+>> TypeError: unsupported operand type(s) for +: \'int\' and \'str\'\n\n\n
+
+
+Global Değişkenler:\n\n
+
+Bir fonksiyonun dışında oluşturulan değişkenler (yukarıdaki tüm örneklerde olduğu gibi) global değişkenler olarak bilinir.\n\n
+
+Global değişkenler herkes tarafından hem fonksiyonların içinde hem de dışında kullanılabilir.(Fonksiyon yazımı ve kullanımını ileriki konularda detaylı öğreneceğiz)\n\n
+
+Örnek:\n\n
+
+x = "öğreniyorum"\n\n
+
+def fonksiyon():\n
+  print("Python " + x)\n\n
+
+fonksiyon()\n\n
+
+OUTPUT:\n
+>> Python öğreniyorum\n\n\n
+
+
+Bir fonksiyonun içinde aynı ada sahip bir değişken oluşturursanız, bu değişken yerel olur ve yalnızca işlevin içinde kullanılabilir. Aynı ada sahip global değişken, olduğu gibi, global ve orijinal değeri ile kalacaktır.\n\n
+
+Örnek:\n\n
+
+x = "öğreniyorum"\n\n
+
+def fonksiyon():\n
+  x = "harika"\n
+  print("Python " + x)\n\n
+
+fonksiyon()\n
+print("Python " + x)\n\n
+
+OUTPUT:\n
+>> Python harika\n
+>> Python öğreniyorum\n\n\n
+
+
+Global Anahtar Kelimesi\n\n
+
+Normalde, bir fonksiyonun içinde bir değişken oluşturduğunuzda, bu değişken yereldir ve yalnızca bu işlevin içinde kullanılabilir.\n\n
+
+Bir fonksiyonun içinde genel bir değişken oluşturmak için global anahtar sözcüğünü kullanabilirsiniz.\n
+Global anahtar sözcüğünü kullanırsanız, değişken global kapsama aittir:\n\n
+
+Örnek:\n\n
+
+def fonksiyon():\n
+  global x\n
+  x = "devam"\n\n
+
+myfunc()\n
+print("Öğrenmeye " + x)\n\n
+
+OUTPUT:\n
+>> Öğrenmeye devam\n
+
+        </item>
+        <item>
+            Programlamada veri türü önemli bir kavramdır.\n
+Değişkenler farklı türdeki verileri depolayabilir ve farklı türler farklı şeyler yapabilir.\n
+Python, bu kategorilerde varsayılan olarak yerleşik olarak aşağıdaki veri türlerine sahiptir:\n\n
+
+Text Type: 	str\n
+Numeric Types: 	int, float, complex\n
+Sequence Types: list, tuple, range\n
+Mapping Type: 	dict\n
+Set Types: 	set, frozenset\n
+Boolean Type: 	bool\n
+Binary Types: 	bytes, bytearray, memoryview\n\n
+
+Type () fonksiyonunu kullanarak herhangi bir nesnenin veri türünü alabilirsiniz:\n\n
+
+Örnek:\n\n
+
+x = 5\n
+print(type(x))\n\n
+
+OUTPUT:\n
+>> &lt;class \'int\'> # x değişkeni int veri türündendir\n\n\n
+
+
+Veri Türünü Ayarlama/n/n
+
+Python\'da, bir değişkene değer atadığınızda veri türü ayarlanır:\n\n
+
+Örnek					Veri türü\n\n
+
+x = "Hello World" 			str\n
+x = 20 					int\n
+x = 20.5 				float\n
+x = 1j 					complex\n
+x = ["apple", "banana", "cherry"] 	list\n
+x = ("apple", "banana", "cherry") 	tuple\n
+x = range(6) 				range\n
+x = {"name" : "John", "age" : 36} 	dict\n
+x = {"apple", "banana", "cherry"} 	set\n
+x = frozenset({"apple", "banana"}) 	frozenset\n
+x = True 				bool\n
+x = b"Hello" 				bytes\n
+x = bytearray(5) 			bytearray\n
+x = memoryview(bytes(5)) 		memoryview\n\n\n
+
+
+
+Belirli Veri Türünü Ayarlama\n\n
+
+Veri türünü belirtmek isterseniz, aşağıdaki yapıcı işlevlerini kullanabilirsiniz:\n\n
+
+Örnek					Veri Türü\n\n
+
+x = str("Hello World") 			str\n
+x = int(20) 				int\n
+x = float(20.5) 			float\n
+x = complex(1j) 			complex\n
+x = list(("apple", "banana")) 		list\n
+x = tuple(("apple", "banana")) 		tuple\n
+x = range(6) 				range\n
+x = dict(name="John", age=36) 		dict\n
+x = set(("apple", "banana", "cherry")) 	set\n
+x = frozenset(("apple", "banana")) 	frozenset\n
+x = bool(5) 				bool\n
+x = bytes(5) 				bytes\n
+x = bytearray(5) 			bytearray\n
+x = memoryview(bytes(5)) 		memoryview\n
+        </item>
+        <item>
+            Python\'da üç sayısal tür vardır:\n\n
+
+    int\n
+    float\n
+    complex\n\n
+
+Sayısal türlerin değişkenleri, bunlara bir değer atadığınızda oluşturulur:\n\n
+
+Örnek:\n\n
+
+x = 1    # int\n
+y = 2.8  # float\n
+z = 1j   # complex\n\n
+
+Kontrol etmek için type fonksiyonunu kullanabiliriz:\n\n
+
+Örnek:\n\n
+
+x = 1    # int\n
+y = 2.8  # float\n
+z = 1j   # complex\n\n
+
+print(type(x))\n
+print(type(y))\n
+print(type(z))\n\n
+
+OUTPUT:\n
+>> &lt;class \'int\'>\n
+>> &lt;class \'float\'>\n
+>> &lt;class \'complex\'>\n\n\n
+
+
+Int:\n\n
+
+Int veya tamsayı, ondalık sayısız, sınırsız uzunlukta pozitif veya negatif bir tam sayıdır\n\n
+
+Örnek:\n\n
+
+x = 1\n
+y = 35656222554887711\n
+z = -3255522\n\n
+
+Float:\n\n
+
+Kayan nokta veya "kayan nokta sayısı", bir veya daha fazla ondalık sayı içeren pozitif veya negatif bir sayıdır.\n\n
+
+Örnek:\n\n
+
+x = 1.10\n
+y = 1.0\n
+z = -35.59\n\n
+
+Float ayrıca 10\'un üssünü gösteren "e" işaretli bilimsel sayılar olabilir\n\n
+
+Örnek:\n\n
+
+x = 35e3\n
+y = 12E4\n
+z = -87.7e100\n\n\n
+
+
+Complex:\n\n
+
+Karmaşık sayılar "j" ile yazılır\n\n
+
+Örnek:\n\n
+
+x = 3+5j\n
+y = 5j\n
+z = -5j\n\n\n
+
+
+Türü Dönüştürme\n\n
+
+İnt (), float () ve complex () yöntemleriyle bir türden diğerine dönüştürebilirsiniz:\n\n
+
+Örnek:\n\n
+
+x = 1 # int\n
+y = 2.8 # float\n
+z = 1j # complex\n\n
+
+#int türündeki x değerini float\'a çevirme:\n
+a = float(x)\n\n
+
+#Float türündeki y değerini int\'e çevirme:\n
+b = int(y)\n\n
+
+#int türündeki x değerini complex\'e çevirme:\n
+c = complex(x)\n\n
+
+print(a)\n
+print(b)\n
+print(c)\n\n
+
+print(type(a))\n
+print(type(b))\n
+print(type(c))\n\n
+
+OUTPUT:\n
+>> 1.0\n
+>> 2\n
+>> (1+0j)\n
+>> &lt;class \'float\'> &lt;class \'int\'> &lt;class \'complex\'>\n\n
+
+Not: Complex veri türü (karmaşık sayılar) diğer veri türlerine dönüştürülemez.\n\n\n
+
+
+Rastgele Sayı (Random)\n\n
+
+Python\'un rastgele bir sayı yapmak için random() fonksiyonu yoktur, ancak Python\'un rastgele sayılar yapmak için kullanılabilecek Random adında yerleşik bir modülü vardır:\n\n
+
+Random modülünü projenizde içe aktarın (import işlemi) ve 1 ile 9 arasında rastgele bir sayı görüntüleyin:\n\n
+
+Örnek:\n\n
+
+import random\n\n
+
+print(random.randrange (1,10))\n\n
+
+#Program her çalıştırıldığında 1 ile 10 arasında rastgele bir sayı üretip ekrana yazdırır.\n
+OUTPUT:\n
+>> 7\n
+        </item>\n
+        <item>\n\n
+
+Değişkene bir tür belirtmek istediğiniz zamanlar olabilir.Bu casting ile yapılabilir.Python nesne yönelimli bir dildir ve bu nedenle ilkel türleri de dahil olmak üzere veri türlerini tanımlamak için sınıfları kullanır.\n\n
+
+Bu nedenle Python\'da casting yapıcı fonksiyonları kullanılarak yapılır:\n\n
+
+Örnek:\n\n
+
+x = int(1)   # x = 1\n
+y = int(2.8) # y = 2\n
+z = int("3") # z = 3\n\n
+
+x = float(1)     # x = 1.0\n
+y = float(2.8)   # y = 2.8\n
+z = float("3")   # z = 3.0\n
+w = float("4.2") # w = 4.2\n\n
+
+x = str("s1") # x = \'s1\'\n
+y = str(2)    # y = \'2\'\n
+z = str(3.0)  # z = \'3.0\'\n
+        </item>\n
+        <item>Dize Değişmezleri\n\n
+
+Python\'daki dize değişmezleri tek tırnak işareti veya çift tırnak işareti ile çevrilidir.\n
+\'merhaba\', "merhaba" ile aynıdır.\n\n
+
+Print() fonksiyonu bir dize değişmez değeri görüntüleyebilirsiniz:\n\n
+
+Örnek:\n\n
+
+print("Merhaba")\n
+print(\'Merhaba\')\n\n\n
+
+
+Bir Değişkene Dize Atama\n\n
+
+Bir değişkene dize atama, değişken adı ve ardından eşittir işaretiyle ve dize ile yapılır:\n\n
+
+Örnek:\n\n
+
+a = "Hello"\n
+print(a)\n\n
+
+OUTPUT:\n
+>> Hello\n\n
+
+Çok Satırlı Dizeler\n\n
+
+Üç tırnak kullanarak bir değişkene çok satırlı bir dize atayabilirsiniz:\n\n\n
+
+
+Örnek:\n\n
+
+a = """Python ile yazılım geliştirme"""  # 3 tane tek tırnakta kullanılabilir  --> \'\'\'içerik\'\'\'\n\n
+
+print(a)\n\n
+
+OUTPUT:\n
+>> Python ile yazılım geliştirme\n\n\n
+
+
+Dizelerin Veri Türü Dizidir (Arrays)\n\n
+
+Diğer birçok popüler programlama dili gibi, Python\'daki dizeler de unicode karakterleri temsil eden bayt dizileridir.\n\n
+
+Bununla birlikte, Python\'un karakter veri türü yoktur, tek bir karakter sadece 1 uzunluğunda bir dizedir.\n
+Köşeli parantezler dizenin öğelerine erişmek için kullanılabilir.\n\n
+
+Örnek:\n\n
+
+a = "Hello, World!"\n
+print(a[1]) # Dizilerde(Arrays) ilk eleman [0] indeksinde bulunur.\n
+#Bu örnek için a[0] = H, a[1] = e, a[2] = l şeklinde devam eder.\n\n
+
+OUTPUT:\n
+>> e\n\n\n
+
+
+Dilimleme (Slicing)\n\n
+
+Slice söz dizimini kullanarak bir dizi karakteri yazdırabilirsiniz.\n
+Dizenin bir bölümünü döndürmek(return) için  başlangıç ​​dizinini ve bitiş dizinini iki nokta üst üste işaretiyle belirtin\n\n
+
+Örnek:\n\n
+
+b = "Hello, World!"\n
+print(b[2:5]) # ekrana b[2]+b[3]+b[4] şeklinde yazdırır\n\n
+
+OUTPUT:\n
+>> llo\n\n\n
+
+
+Negatif Endeksleme\n
+Dilimi dizenin sonundan başlatmak için negatif dizinler kullanın:\n\n
+
+Örnek:\n\n
+
+Sayıları dizenin sonundan başlayarak karakterleri 5. konumdan 1. konuma getirin:\n\n
+
+b = "Hello World!"\n
+print(b [-5: -2]) # b[-5] = W, b[-2] = l harfine denk gelir ve ekrana orl yazdırır\n\n
+
+OUTPUT:\n
+>> orl\n\n
+
+String Uzunluğu\n\n
+
+Bir dizenin uzunluğunu almak için len() fonksiyonunu kullanın.\n\n
+
+Örnek:\n\n
+
+len() fonksiyonu bir dizenin uzunluğunu döndürür:\n\n
+
+a = "Merhaba Dünya!"\n
+print(len(a)) # len() fonksiyonu gönderilen string kaç eleman içeriyorsa o sayıyı döndürür, print fonksiyonu da bunu ekrana yazar\n\n
+
+OUTPUT:\n
+>> 13\n\n
+
+Dize Yöntemleri (String Methods)\n\n
+
+Python, dizelerde kullanabileceğiniz bir dizi yerleşik yöntem içerir.\n
+Strip () yöntemi boşlukları başından veya sonundan kaldırır:\n\n
+
+Örnek:\n\n
+
+a = " Hello, World! "\n
+print(a.strip()) # returns "Hello, World!"\n\n
+
+OUTPUT:\n
+>> Hello, World!\n\n\n
+
+
+lower() yöntemi, dizeyi küçük harflerle döndürür:\n\n
+
+Örnek:\n\n
+
+ a = "Hello, World!"\n
+print(a.lower())\n\n
+
+OUTPUT:\n
+>> hello, world!\n\n
+
+upper() yöntemi, dizeyi büyük harflerle döndürür:\n\n
+
+Örnek:\n\n
+
+a = "Hello, World!"\n
+print(a.upper())\n\n
+
+OUTPUT:\n
+>> HELLO, WORLD!\n\n
+
+replace() yöntemi, bir dizeyi başka bir dizeyle değiştirir:\n\n
+
+Örnek:\n\n
+
+a = "Hello, World!"\n
+print(a.replace("H", "J"))\n\n
+
+OUTPUT:\n
+>> Jello, World!\n\n
+
+Split() yöntemi, ayırıcı örnekleri bulursa dizeyi alt dizelere böler:\n\n
+
+Örnek:\n\n
+
+a = "Hello, World!"\n
+print(a.split(",")) # [\'Hello\', \' World!\']\n\n
+
+OUTPUT:\n
+>> [\'Hello\', \' World!\']\n\n\n
+
+
+Dizeyi Kontrol Et\n\n
+
+Bir dizede belirli bir kelime öbeğinin veya karakterin bulunup bulunmadığını kontrol etmek için "in" veya "not in" anahtar kelimeleri kullanabiliriz.\n\n
+
+Örnek:\n\n
+
+txt = "İspanya\'da yağmur çoğunlukla ovada kalır"\n
+x = "ğmur" in txt\n
+# ğmur stringi txt stringinde yer alıyor mu diye kontrol eder. var ise true yok ise false döndürür.\n\n
+
+print(x)\n\n
+
+OUTPUT:\n
+>> True\n\n
+
+Dize Birleştirme\n\n
+
+İki dizeyi birleştirmek veya birleştirmek için + işlecini kullanabilirsiniz\n\n
+
+Örnek:\n\n
+
+a = "Hello"\n
+b = "World"\n
+c = a + b\n
+print(c)\n\n
+
+c = a + " " + b\n
+print(c)\n\n
+
+OUTPUT:\n
+>> HelloWorld\n
+>> Hello World\n\n\n
+
+
+Dize Biçimi\n\n
+
+Python Değişkenleri bölümünde öğrendiğimiz gibi, dizeleri ve sayıları şu şekilde birleştiremeyiz:\n\n
+
+Örnek:\n\n
+
+age = 19\n
+txt = "Benim adım AliVeli ve {} yaşındayım"\n
+print(txt.format(age))\n\n
+
+OUTPUT:\n
+>> Benim adım AliVeli ve 19 yaşındayım\n\n
+
+Format () yöntemi sınırsız sayıda bağımsız değişken alır ve ilgili yer tutuculara yerleştirilir:\n\n
+
+# Mümkün oldukça ingilizce terimler kullanacağız çünkü yazılım dünyasında bu olmazsa olmazdır. Anlamadığınız terimleri araştırarak kendinizi geliştirmenize katkı sağlayacaktır.\n\n
+
+Örnek:\n\n
+
+quantity = 3\n
+itemno = 567\n
+price = 49.95\n
+myorder = "I want {} pieces of item {} for {} dollars."\n
+print(myorder.format(quantity, itemno, price))\n\n
+
+OUTPUT:\n
+>> I want 3 pieces of item 567 for 49.95 dollars.\n\n
+
+Bağımsız değişkenlerin doğru yer tutuculara yerleştirildiğinden emin olmak için {0} dizin numaralarını kullanabilirsiniz:\n\n
+
+Örnek:\n\n
+
+quantity = 3\n
+itemno = 567\n
+price = 49.95\n
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."\n
+print(myorder.format(quantity, itemno, price))\n\n
+
+OUTPUT:\n
+>> I want to pay 49.95 dollars for 3 pieces of item 567\n\n\n
+
+
+Escape Character (Kaçış Karakterleri)\n\n
+
+Bir dizeye illegal(yasaklı) karakterler eklemek için bir kaçış karakteri kullanın.\n\n
+
+Bir kaçış karakteri, ters eğik çizgi \ ve ardından eklemek istediğiniz karakterdir.\n
+Geçersiz bir karakter örneği, çift tırnak işaretleri içine alınmış bir dizenin içindeki çift tırnaktır:\n\n
+
+Örnek: Aşağıdaki kullanım bize hata olarak dönecektir.\n\n
+
+txt = "Biz kuzeyden "Viking" leriz."\n\n
+
+Doğru Kullanım:\n\n
+
+txt = "Biz kuzeyden \"Viking\" leriz."\n\n
+
+OUTPUT:\n
+>> Biz kuzeyden Vikingleriz.\n\n\n
+
+
+Örnek Kullanımlar:\n\n
+
+\ \' 	Tek Tırnak 	(Single Quote)\n
+\\ 	Eğik çizgi	(Backslash)\n
+\n 	Yeni Satır 	(New Line)\n
+\r 	Satır Başı	(Carriage Return)\n
+\t 	Tab\n
+\b 	Geri  	  	(Backspace)\n
+\f 	Form Feed\n
+\ooo 	Sekizli Değer   (Octal value)\n
+\xhh 	Onaltılık Değer (Hex value)\n\n\n
+
+
+Tüm String Methodları:\n\n
+
+capitalize () 	İlk karakteri büyük harfe dönüştürür\n
+casefold () 	Dizeyi küçük harfe dönüştürür\n
+center () 	Ortalanmış bir dize döndürür\n
+count () 	Bir dizede belirtilen bir değerin kaç kez gerçekleştiğini döndürür\n
+encode () 	Dizenin kodlanmış bir sürümünü döndürür\n
+endswith ()	Dize belirtilen değerle bitiyorsa true değerini döndürür\n
+expandtabs () 	Dizenin sekme boyutunu ayarlar\n
+find () 	Dizeyi belirli bir değer arar ve bulunduğu yeri döndürür\n
+format () 	Bir dizede belirtilen değerleri formatlar\n
+format_map ()   Bir dizede belirtilen değerleri biçimlendirir\n
+index () 	Dizede belirtilen bir değeri arar ve bulunduğu yeri döndürür\n
+isalnum () 	Dizedeki tüm karakterler alfasayısalsa True döndürür\n
+isalpha () 	Dizedeki tüm karakterler alfabede ise True değerini döndürür\n
+isdecimal () 	Dizedeki tüm karakterler ondalıksa True değerini döndürür\n
+isdigit ()	Dizedeki tüm karakterler rakamsa True değerini döndürür\n
+isidentifier () Dize bir tanımlayıcıysa True değerini döndürür\n
+islower () 	Dizedeki tüm karakterler küçük harfse True döndürür\n
+isnumeric () 	Dizedeki tüm karakterler sayısalsa True döndürür\n
+isprintable ()	Dizedeki tüm karakterler yazdırılabilirse True değerini döndürür\n
+isspace () 	Dizedeki tüm karakterler beyaz boşluksa True döndürür\n
+istitle () 	Dize bir başlığın kurallarına uyarsa True döndürür\n
+isupper () 	Dizedeki tüm karakterler büyük harfse True döndürür\n
+join () 	Yinelenebilir öğenin öğelerini dizenin sonuna ekler\n
+ljust () 	Dizenin sola dayalı bir sürümünü döndürür\n
+lower () 	Bir dizeyi küçük harfe dönüştürür\n
+lstrip () 	Dizenin sol trim versiyonunu döndürür\n
+maketrans () 	Çevirilerde kullanılacak bir çeviri tablosu döndürür\n
+partition () 	Dizenin üç bölüme ayrıldığı bir demet döndürür\n
+replace () 	Belirtilen bir değerin belirtilen bir değerle değiştirildiği bir dize döndürür\n
+rfind () 	Dizeyi belirli bir değer arar ve bulunduğu son konumu döndürür\n
+rindex () 	Dizeyi belirtilen bir değer arar ve bulunduğu son konumu döndürür\n
+rjust () 	Dizenin sağa yaslanmış halini döndürür\n
+rpartition ()   Dizenin üç bölüme ayrıldığı bir demet döndürür\n
+rsplit () 	Dizeyi belirtilen ayırıcıya böler ve bir liste döndürür\n
+rstrip () 	Dizenin sağ trim sürümünü döndürür\n
+split () 	Dizeyi belirtilen ayırıcıya böler ve bir liste döndürür\n
+splitlines ()   Dizeyi satır sonlarında böler ve bir liste döndürür\n
+startswith ()   Dize belirtilen değerle başlıyorsa true değerini döndürür\n
+strip () 	Dizenin kesilmiş bir sürümünü döndürür\n
+swapcase () 	Vakaları değiştirir, küçük harf büyük harf olur veya tersi\n
+title () 	Her kelimenin ilk karakterini büyük harfe dönüştürür\n
+translate () 	Çevrilmiş bir dize döndürür\n
+upper () 	Bir dizeyi büyük harfe dönüştürür\n
+zfill () 	Dizeyi başlangıçta belirtilen sayıda 0 değerle doldurur\n
+        </item>\n
+        <item>Booleanlar iki değerden birini temsil eder: True or False (Doğru veya yanlış)\n\n
+
+Boolean Değerleri\n\n
+
+Programlamada genellikle bir ifadenin Doğru mu Yanlış mı olduğunu bilmeniz gerekir.\n
+Python\'daki herhangi bir ifadeyi değerlendirebilir ve iki cevaptan birini (Doğru veya Yanlış) alabilirsiniz.\n\n
+
+İki değeri karşılaştırdığınızda, ifade değerlendirilir ve Python Bool yanıtını döndürür:\n\n
+
+Örnek:\n\n
+
+print(10 > 9)\n
+print(10 == 9)\n
+print(10 \u003c 9)\n\n
+
+OUTPUT:\n
+>> True\n
+>> False\n
+>> False\n\n\n
+
+
+# if - else şart bloklarını ileride detaylı öğreneceğiz.\n
+Bir if ifadesinde koşul çalıştırdığınızda, Python True veya False döndürür:\n\n
+
+Örnek:\n
+#Koşulun Doğru veya Yanlış olmasına bağlı olarak bir mesaj yazdırın:\n\n
+
+a = 200\n
+b = 33\n\n
+
+if b > a:\n
+  print("b sayısı a\'dan büyüktür.")\n
+else:\n
+  print("b sayısı a\'dan büyük değildir")\n
+# Büyük olmaması küçük olduğu anlamına gelmez, hiçbir koşul true dönmezse else satırı çalıştırılır.\n\n\n
+
+
+OUTPUT:\n
+>> b sayısı a\'dan büyük değildir\n\n\n\n
+
+
+
+Değerleri ve Değişkenleri Değerlendirin\n\n
+
+Bool () fonksiyonu, herhangi bir değeri değerlendirmenize ve karşılığında True veya False vermenizi sağlar.\n\n
+
+Örnek:\n\n
+
+print(bool("Hello"))\n
+print(bool(15))\n\n
+
+OUTPUT:\n
+>> True\n
+>> True\n\n
+
+Bazı Değerler Yanlış Döndürür\n\n
+
+Aslında, (), [], {}, "", 0 sayısı ve None değeri gibi boş değerler dışında False olarak değerlendirilen çok fazla değer yoktur. Ve tabii ki False değeri False olarak değerlendirilir.\n\n
+
+Örnek:\n\n
+
+bool(False)\n
+bool(None)\n
+bool(0)\n
+bool("")\n
+bool(())\n
+bool([])\n
+bool({})\n\n
+
+OUTPUT:\n
+>> False\n
+>> False\n
+>> False\n
+>> False\n
+>> False\n
+>> False\n
+>> False\n\n\n
+
+
+Fonksiyonlar bir Boolean değer döndürebilir\n\n
+
+Bir Boolean değeri döndüren fonksiyonlar oluşturabilirsiniz:\n\n
+
+Örnek:\n\n
+
+def myFunction() :\n
+  return True\n\n
+
+print(myFunction())\n\n
+
+OUTPUT:\n
+>> True\n\n\n
+
+
+Fonksiyon true döndürüyorsa \'evet\' false döndürüyorsa \'hayır\' yazdıran program:\n\n
+
+Örnek:\n\n
+
+def myFunction() :\n
+  return True\n\n
+
+if myFunction():\n
+  print("evet")\n
+else:\n
+  print("hayır")\n\n
+
+</item>\n
+        <item>\n
+            Operatörler, değişkenler ve değerler üzerinde işlemler yapmak için kullanılır.\n
+Python operatörleri aşağıdaki gruplara ayırır:\n\n
+
+    Aritmetik operatörler\n
+    Atama operatörleri\n
+    Karşılaştırma operatörleri\n
+    Mantıksal operatörler\n
+    Kimlik operatörleri\n
+    Üyelik operatörleri\n
+    Bitsel operatörler\n\n\n
+
+
+Python Aritmetik Operatörler\n\n
+
+Aritmetik operatörler, ortak matematiksel işlemleri gerçekleştirmek için sayısal değerlerle kullanılır:\n\n
+
+	Operator 	Name 				Example\n\n
+
+	+ 		Addition (Toplama) 		x + y\n
+	- 		Subtraction (Çıkarma) 		x - y\n
+	* 		Multiplication (Çarpma) 	x * y\n
+	/ 		Division (Bölme)		x / y\n
+	% 		Modulus (Mod(Bölümünden Kalan)) x % y\n
+	** 		Exponentiation (Üs alma) 	x ** y\n
+	// 		Floor division(Tam sayı böleni) x // y\n\n\n
+
+
+Python Atama Operatörleri\n\n
+
+Atama Operatörleri değişkenlere değer atamak için kullanılır:\n\n\n
+
+
+	Operator 	Example 	Aynı İşlev (Same as)\n
+	= 		x = 5 		x = 5\n
+	+= 		x += 3 		x = x + 3\n
+	-= 		x -= 3 		x = x - 3\n
+	*= 		x *= 3 		x = x * 3\n
+	/= 		x /= 3 		x = x / 3\n
+	%= 		x %= 3 		x = x % 3\n
+	//= 		x //= 3 	x = x // 3\n
+	**= 		x **= 3 	x = x ** 3\n
+	&amp;= 		x &amp;= 3 		x = x &amp; 3\n
+	|= 		x |= 3 		x = x | 3\n
+	^= 		x ^= 3 		x = x ^ 3\n
+	>>= 		x >>= 3 	x = x >> 3\n
+	&lt;&lt;= 		x &lt;&lt;= 3 	x = x &lt;&lt; 3\n\n\n
+
+
+Python Karşılaştırma Operatörleri\n\n
+
+Karşılaştırma operatörleri iki değeri karşılaştırmak için kullanılır:\n\n\n
+
+
+	Operator 	Name 					Example\n\n\n
+
+	== 		Eşittir (Equal) 			x == y\n
+	!= 		Eşit değil (Not equal) 			x != y\n
+	> 		Büyüktür (Greater than)			x > y\n
+	&lt;		Küçüktür (Less than) 			x &lt; y\n
+            >= 		Büyük veya eşit (Greater or equal to)   x >= y\n
+	&lt;= 		Küçük veya eşit (Less than or equal to) x &lt;= y\n\n\n
+
+
+Python Mantıksal Operatörler\n\n
+
+Mantıksal operatörler koşullu ifadeleri birleştirmek için kullanılır:\n\n\n
+
+
+	Operator Description 							Example\n
+	and  	 İfadelerin hepsi doğru ise true döndür				x &lt; 5 and  x &lt; 10\n
+	or 	 İfadelerden en az biri doğru ise true döndür			x &lt; 5 or x &lt; 4\n
+	not 	 Sonucu ters çevir, sonuç doğruysa False değerini döndürür	not(x &lt; 5 and x &lt; 10)\n\n\n
+
+
+Python Kimlik Operatörleri\n\n
+
+Kimlik işleçleri, nesneleri eşit olduklarında değil, aslında aynı nesneyse, aynı bellek konumuyla karşılaştırmak için kullanılır:\n\n\n
+
+
+	Operator 	Description 						Example\n\n
+
+	is  		iki değerde aynı obje türündense true döndürür		x is y\n
+	is not 		İki değerde aynı obje türünden değilse true döndürür 	x is not y\n\n\n
+
+
+Python Üyelik Operatörleri\n\n
+
+Üyelik operatörleri, bir nesnede bir sekans sunulup sunulmadığını test etmek için kullanılır:\n\n\n
+
+
+	Operator 	Description 						Example\n\n
+
+	in  		Nesnede verilen türde bir değer var ise true döndürür 	x in y\n
+	not in 		Nesnede verilen türde bir değer yok ise true döndürür 	x not in y\n
+
+
+Python Bitsel Operatörler\n\n
+
+Bitsel operatörler (ikili) sayıları karşılaştırmak için kullanılır:\n\n\n
+
+
+	Operator Name 			Description\n\n
+
+	&amp;
+  	 AND 			Her iki bit 1 ise her biti 1 olarak ayarlar\n
+	| 	 OR 			İki bitten biri 1 ise her biti 1 ayarlar\n
+ 	^ 	 XOR 			İki bitten yalnızca biri 1 ise her biti 1 ayarlar\n
+	~  	 NOT 			Tüm bitleri tersine çevirir\n
+	&lt;&lt; 	 Zero fill left shift 	Sıfırları sağdan içeri iterek sola kaydırır ve en soldaki 						bitlerin düşmesine izin verir.\n
+            >> 	 Signed right shift 	En soldaki bitin kopyalarını soldan iterek sağa kaydırır ve 						sağdaki bitlerin düşmesine izin verir.\n
+
+        </item>
+        <item>Python Koleksiyonları (Diziler)\n\n
+
+Python programlama dilinde dört toplama veri türü vardır:\n\n
+
+    Liste, Sıralı ve değiştirilebilir bir koleksiyon. Yinelenen üyelere izin verir.\n
+    Tuple, Sıralı ve değiştirilemeyen bir koleksiyon. Yinelenen üyelere izin verir.\n
+    Set, Sırasız  ve  unindexed olmayan bir koleksiyon. Yinelenen üye yok.\n
+    Sözlük sıralanmamış, değiştirilebilir ve endekslenmiş bir koleksiyon. Yinelenen üye yok.\n\n
+
+Bir koleksiyon türü seçerken, bu türün özelliklerini anlamak yararlıdır. Belirli bir veri kümesi için doğru türün seçilmesi anlamın korunması anlamına gelebilir ve verimlilik veya güvenlikte bir artış anlamına gelebilir.\n\n\n
+
+
+
+Liste\n\n
+
+Liste, sıralı ve değiştirilebilir olan bir koleksiyondur. Python\'da listeler köşeli parantez ile yazılır.\n\n\n
+
+
+thislist = ["apple", "banana", "cherry"]\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\', \'cherry\']\n\n\n
+
+
+Öğelere Erişim\n\n
+
+Liste öğelerine dizin numarasına (index number) bakarak ulaşabilirsiniz:\n\n
+
+Örnek:\n\n
+
+#Listenin ikinci öğesini yazdırın:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+print(thislist[1])\n\n
+
+OUTPUT:\n
+>> banana\n\n\n
+
+
+Negatif Index\n\n
+
+Negatif index sondaki elemana -1 eşitlemesi ile başlar sondan başa doğru ilerleme sağlar.\n\n
+
+Örnek:\n\n
+
+#Listenin son elemanını yazdıralım:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+print(thislist[-1])\n\n
+
+OUTPUT:\n
+>> cherry\n\n\n
+
+
+Index Aralığı\n\n
+
+Aralığın nereden başlayacağını ve nerede biteceğini belirterek dizide gezineceğiniz aralığı belirleyebilirsiniz.\n
+Bir aralık belirtirken, dönüş değeri belirtilen öğeleri içeren yeni bir liste olacaktır.\n\n
+
+Örnek:\n\n
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]\n
+print(thislist[2:5]) # 2 dahil fakat 5 dahil değildir 2, 3, 4 indexleri yazdırılır.\n\n
+
+OUTPUT:\n
+>> [\'cherry\', \'orange\', \'kiwi\']\n\n
+
+Başlangıç ​​değerini dışarıda bırakırsak, aralık ilk öğeden başlayacaktır:\n\n
+
+Örnek:\n\n
+
+#Bu örnek öğeleri baştan istediğimiz indexe kadar yazdıralım:\n\n
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]\n
+print(thislist[:4])\n
+# Baştan başlayıp (thislist[0]\'dan başlayıp) thislist[4]\'e kadar yazdırır, thislist[4] dahil olmaz\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\', \'cherry\', \'orange\']\n\n\n
+
+
+Bitiş değerini dışarıda bırakarak aralık listenin sonuna kadar devam eder:\n\n
+
+Örnek:\n\n
+
+# Bu örnek, öğeleri 2. indexten başlatır("kiraz") ve sonuna kadar döndürür:\n
+thislist = ["elma", "muz", "kiraz", "portakal", "kivi", "kavun", "mango"]\n
+print(thislist [2:])\n\n
+
+OUTPUT:\n
+>> [\'kiraz\', \'portakal\', \'kivi\', \'kavun\', \'mango\']\n\n\n
+
+
+Negatif Endeks Aralığı\n\n
+
+Aramayı listenin sonundan başlatmak istiyorsanız negatif dizinler belirtin:\n\n
+
+Örnek:\n\n
+
+ thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]\n
+print(thislist[-4:-1])\n\n
+
+OUTPUT:\n
+>> [\'orange\', \'kiwi\', \'melon\']\n\n\n\n
+
+
+
+Öğe Değerini Değiştir\n
+Belirli bir öğenin değerini değiştirmek için dizin numarasına bakın:\n\n
+
+Örnek:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist[1] = "blackcurrant"\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'blackcurrant\', \'cherry\']\n\n\n
+
+
+Listede Döngü\n\n
+
+# Döngüler konu başlığında detaylı döngü kullanımları anlatılıyor\n
+For döngüsünü kullanarak liste öğeleri arasında geçiş yapabilirsiniz:\n\n
+
+Örnek:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+for x in thislist:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry\n\n\n\n
+
+
+
+Öğenin Var olup olmadığını kontrol edin\n\n
+
+Belirli bir öğenin listede olup olmadığını belirlemek için "in" anahtar sözcüğünü kullanın:\n\n
+
+Örnek:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n\n
+
+if "apple" in thislist:\n
+   print("Evet, apple bizim listemizde bulunuyor.")\n\n
+
+OUTPUT:\n
+>> Evet, apple bizim listemizde bulunuyor.\n\n\n
+
+
+Liste Uzunluğu\n\n
+
+Listede kaç öğe olduğunu belirlemek için len() fonksiyonunu kullanın:\n\n
+
+Örnek:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+print(len(thislist))\n\n
+
+OUTPUT:\n
+>> 3\n\n\n\n\n
+
+
+
+
+Listeye Öğe Ekleme\n\n
+
+Listenin sonuna bir öğe eklemek için append() methodunu kullanın:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist.append("orange")\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\', \'cherry\', \'orange\']\n\n\n
+
+
+Belirtilen indexe bir öğe eklemek için insert() methodunu kullanın:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist.insert(1, "orange")\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'orange\', \'banana\', \'cherry\']\n\n\n
+
+
+Listeden öğeyi kaldırmak\n\n
+
+Listeden öğeleri kaldırmanın birkaç yöntemi vardır:\n
+Remove() yöntemi belirtilen öğeyi kaldırır:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist.remove("banana")\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>>[\'apple\', \'cherry\']\n\n\n
+
+
+Pop () yöntemi belirtilen dizini (veya dizin belirtilmemişse son öğeyi) kaldırır:\n\
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist.pop()\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\']\n\n\n
+
+
+Del anahtar sözcüğü belirtilen dizini kaldırır:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+del thislist[0]\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> [\'banana\', \'cherry\']\n\n
+
+Ayrıca Del anahtar sözcüğü listeyi de tamamen silebilir:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+del thislist\n\n
+
+Clear () yöntemi listeyi boşaltır:\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+thislist.clear()\n
+print(thislist)\n\n
+
+OUTPUT:\n
+>> []\n\n\n\n
+
+
+
+Liste Kopyalama\n\n
+
+List2 = list1 yazarak bir listeyi kopyalayamazsınız, çünkü list2 yalnızca list1\'e bir referans olur ve list1\'de yapılan değişiklikler otomatik olarak list2\'de de yapılır.\n\n
+
+Bir kopya yapmanın yolları vardır, bir yolu yerleşik Liste yöntemi copy () kullanmaktır.\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+mylist = thislist.copy()\n
+print(mylist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\', \'cherry\']\n\n
+
+list() Methodu da bir kopyalama işlemi yapar\n\n
+
+thislist = ["apple", "banana", "cherry"]\n
+mylist = list(thislist)\n
+print(mylist)\n\n
+
+OUTPUT:\n
+>> [\'apple\', \'banana\', \'cherry\']\n\n\n\n
+
+
+
+İki Listeyi Birleştirme\n\n
+
+Python\'da iki veya daha fazla listeyi birleştirmenin birkaç yolu vardır.\n
+En kolay yollardan biri "+" operatörünü kullanmaktır.\n\n
+
+list1 = ["a", "b" , "c"]\n
+list2 = [1, 2, 3]\n\n
+
+list3 = list1 + list2\n
+print(list3)\n\n
+
+OUTPUT:\n
+>> [\'a\', \'b\', \'c\', 1, 2, 3]\n\n\n\n
+
+
+
+Bir başka yol ise append() methodunu kullanmaktır, tüm öğeler teker teker istenen listeye ekler\n\n
+
+list1 = ["a", "b" , "c"]\n
+list2 = [1, 2, 3]\n\n
+
+for x in list2:\n
+  list1.append(x)\n\n
+
+print(list1)\n\n
+
+OUTPUT:\n
+>> [\'a\', \'b\', \'c\', 1, 2, 3]\n\n
+
+Veya, bir listeden başka bir listeye öğe eklemek olan extend () yöntemini kullanabilirsiniz:\n\n
+
+list1 = ["a", "b" , "c"]\n
+list2 = [1, 2, 3]\n\n
+
+list1.extend(list2)\n
+print(list1)\n\n
+
+OUTPUT:\n
+>> [\'a\', \'b\', \'c\', 1, 2, 3]\n\n\n\n
+
+
+
+List () YapıcıSI (Constructor)\n\n
+
+Yeni bir liste yapmak için list () yapıcısını kullanmak da mümkündür.\n\n
+
+thislist = list(("apple", "banana", "cherry")) # çift parantez kullanımına dikkat ediniz\n
+print(thislist)\n\n\n\n
+
+
+
+Liste Methodları\n\n
+
+Python, listelerde kullanabileceğiniz bir dizi yerleşik methodlar içerir\n\n\n
+
+
+	Method 		Description\n\n
+
+	append()	Listenin sonuna bir öğe ekler\n
+	clear()		Tüm öğeleri listeden kaldırır\n
+	copy()		Listenin bir kopyasını döndürür\n
+	count()		Belirtilen değere sahip öğelerin sayısını döndürür\n
+	extend()	listenin öğelerini geçerli listenin sonuna ekler\n
+	index()		Belirtilen değere sahip ilk öğenin dizinini döndürür\n
+	insert()	Belirtilen konuma bir öğe ekler\n
+	pop()		Öğeyi belirtilen konumda kaldırır\n
+	remove()	Belirtilen değere sahip öğeyi kaldırır\n
+	reverse()	Listenin sırasını tersine çevirir\n
+	sort()		Listeyi Sıralar\n
+        </item>
+        <item>
+            Tuple sıralı ve değiştirilemeyen bir koleksiyondur. Python\'da tuples parantez ile yazılır. Bir tuple oluşturulduktan sonra, öğe ekleyemezsiniz. Tuple değişmez bir yapıya sahiptir.\n\n
+
+Tuple Oluşturma:\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+print(thistuple)\n\n
+
+OUTPUT:\n
+>> (\'apple\', \'banana\', \'cherry\') \n\n\n
+
+
+Yapıcı Method ile Tuple Oluşturma\n\n
+
+Örnek:\n\n
+
+thistuple = tuple(("apple", "banana", "cherry")) # iki parantez olmak zorunda\n\n\n
+
+
+Tuple Öğelerine Erişim:\n\n
+
+Tuple öğelerine, köşeli parantez içindeki dizin numarasından erişebilirsiniz\n\n
+
+Örnek:\n
+ #Bir tuple içindeki ikinci elemanı ekrana yazdıralım\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+print(thistuple[1]) \n\n
+
+OUTPUT:\n
+>> banana\n\n\n
+
+
+Negative Index\n\n
+
+Negatif indeksleme, sondan başlamak anlamına gelir, -1 son öğeyi, -2 sondan ikinci öğeyi gösterir ve böyle tuple\'ın başlangıcına doğru ilerler.\n\n
+
+Örnek:\n
+ #Bİr tuple içindeki son elemanı negative index kullanarak yazdıralım\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+print(thistuple[-1])\n\n
+
+OUTPUT:\n
+>> cherry \n\n
+
+Index Aralığı\n\n
+
+Aralığın nereden başlayacağını ve nerede biteceğini belirterek bir dizin aralığı belirleyebilirsiniz.\n
+Bir aralık belirtirken, dönüş değeri belirtilen öğeleri içeren yeni bir tuple olacaktır.\n\n
+
+Örnek:\n
+ #Bir tuple\'ın 3. 4. ve 5. elemanını index aralığı belirleyerek ekrana yazdıralım\n\n
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")\n
+print(thistuple[2:5]) #3. elemanın 2. indexte bulunduğunu unutmayalım\n\n
+
+OUTPUT:\n
+>> (\'cherry\', \'orange\', \'kiwi\') \n\n\n
+
+
+Negatif Index Aralığı\n\n
+
+Örnek:\n\n
+
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")\n
+print(thistuple[-4:-1])\n\n\n
+
+
+OUTPUT:\n
+>> (\'orange\', \'kiwi\', \'melon\') \n\n\n
+
+
+Tuple Değerlerini Değiştirme\n\n
+
+Bir tuple oluşturulduktan sonra değerlerini değiştiremezsiniz.Tuple değiştirilemez yapıya sahiptir.\n\n
+Ancak bir çözüm var. Tuplelar bir listeye dönüştürebilir, listeyi değiştirebilir ve listeyi tekrar bir tuple\'a dönüştürebilirsiniz.\n\n
+
+Örnek:\n\n
+
+x = ("apple", "banana", "cherry")\n
+y = list(x) # x değişkenindeki tuple listeye dönüştürülüp y değişkenine atandı\n
+y[1] = "kiwi" # y değişkenindeki listenin 1. indexindeki değer kiwi ile değiştirildi\n
+x = tuple(y) # y değişkenindeki liste, tuple\'a dönüştürülüp x değişkenine geri atandı\n\n
+
+print(x) \n\n
+
+OUTPUT:\n
+>> ("apple", "kiwi", "cherry") \n\n\n
+
+
+Tuple ile Döngü Kullanımı\n\n
+
+For döngüsü kullanarak tuple öğeleri arasında döngü yapabilirsiniz\n\n
+
+Örnek:\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+for x in thistuple:\n
+  print(x) \n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry \n\n\n
+
+
+Tuple\'da Bir Değerin Kontrolü\n\n
+
+Belirli bir değerin bir tuple içinde olup olmadığını belirlemek için "in" anahtar sözcüğünü kullanın\n\n
+
+Örnek:\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+if "apple" in thistuple: #apple değeri tuple içinde var mı diye kontrol eder\n
+  print("Yes, apple is in the fruits tuple") # if koşulu true dönerse print fonksiyonu çalışır\n\n
+
+OUTPUT:\n
+>> Yes, apple is in the fruits tuple \n\n\n
+
+
+Tuple Uzunluğu\n\n
+
+Bir tuple\'ın kaç öğeye sahip olduğunu belirlemek için len() methodunu kullanın\n\n
+
+Örnek:\n\n
+
+ thistuple = ("apple", "banana", "cherry")\n
+print(len(thistuple)) \n\n
+
+OUTPUT:\n
+>> 3\n\n\n
+
+
+Öğe Ekleme\n\n
+
+Bir tuple oluşturulduktan sonra, öğe ekleyemezsiniz. Tuple değişmez bir yapıya sahiptir.\n\n\n
+
+
+Tek Bir Öğe ile Tuple Oluşturma\n\n
+
+Yalnızca bir öğe içeren bir tuple oluşturmak için, Python değişkeni bir tuple olarak tanımazsa, öğeden sonra virgül eklenmelidir.\n\n
+
+ # Bu bir tuple\'dır.\n
+thistuple = ("apple",)\n\n
+
+ # Tuple olarak algılanmaz, ilk öğeden sonra virgül konması gerekir.\n
+thistuple = ("apple")\n\n\n
+
+
+Öğe Silme\n\n
+
+Değiştirilemeyen bir yapıya sahip olan bu koleksiyona öğe eklenemediği gibi silinemezde. Değiştirilemeyen yapı ilk tanımlandığı gibi kalmasını sağlar. Del keywordu ile bir tuple tamamen silinebilir\n\n
+
+Örnek:\n\n
+
+thistuple = ("apple", "banana", "cherry")\n
+del thistuple\n\n\n
+
+
+Tuple Birleştirme\n\n
+
+İki tuple "+" operatörü kullanılarak birleştirilir\n\n
+
+Örnek:\n\n
+
+tuple1 = ("a", "b" , "c")\n
+tuple2 = (1, 2, 3)\n\n
+
+tuple3 = tuple1 + tuple2\n
+print(tuple3) \n\n
+
+OUTPUT:\n
+>> (\'a\', \'b\', \'c\', 1, 2, 3) \n\n\n
+
+
+Tuple Methodları\n\n
+
+	Method 	Description\n\n
+
+	count()	Tuple içindeki toplam öğe sayısını döndürür.\n
+	index()	Parametre olarak verilen indexin değerini döndürür.\n
+
+        </item>
+        <item>
+
+Bir dizi, sırasız ve birleştirilmemiş bir koleksiyondur. Python dizilerin kıvırcık parantez ile tanımlanır.\n\n
+
+# Set kelimesinin bir çok türkçe karşılığı vardır. Küme, dizi, grup gibi karşılıkları olabilir. Eğitim serimiz boyunca diğer programlama dillerinde bulunmasından ötürü dizi kelimesini kullanacağız fakat Python Setlerinin diğer dillerdeki dizilerden farklılıkları olduğunu unutmamak gerekir.\n\n
+
+Dizi Oluşturma\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+# Unutmayın ki Setler sıralanmamış olduğundan, öğelerin hangi sırayla görüneceğinden emin olamazsınız.\n
+print(thisset)\n\n
+
+OUTPUT:\n
+>> {\'banana\', \'cherry\', \'apple\'} \n\n\n
+
+
+Yapıcı Method ile Dizi Oluşturma (Constructor)\n\n
+
+Örnek:\n\n
+
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets\n
+print(thisset) \n\n
+
+OUTPUT:\n
+>> {\'cherry\', \'banana\', \'apple\'} \n\n\n
+
+
+Dizi Öğelerine Erişim\n\n
+
+Bir dizideki öğelere bir indexe başvurarak erişemezsiniz, çünkü diziler sıralanmamış olduğundan öğelerin indexi yoktur.\n\n
+
+Ancak, for döngüsünü kullanarak dizi öğeleri arasında sırasız şekilde gezinebilir veya "in" anahtar sözcüğünü kullanarak dizide belirtilen değerin olup olmadığını kontrol edebilirsiniz.\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n\n
+
+for x in thisset:\n
+  print(x) \n\n
+
+OUTPUT:\n
+>> cherry\n
+>> apple\n
+>> banana\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+print("banana" in thisset)\n\n
+
+OUTPUT:\n
+>> True\n\n
+
+Öğe Değiştirme\n\n
+
+Dizi içerisindeki öğelere belirli bir değerle erişilemediği için spesifik bir öğenin değiştirilmesi mümkün değildir. Fakat yeni bir öğe eklenebilir\n\n
+
+Öğe Ekleme\n\n
+
+Kullanılabilecek 2 adet ekleme methodu bulunmaktadır:\n\n
+
+add() ve update() methodları\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+thisset.add("orange")\n\n
+
+print(thisset) \n\n
+
+OUTPUT:\n
+>> {\'cherry\', \'orange\', \'apple\', \'banana\'} \n\n\n
+
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+thisset.update(["orange", "mango", "grapes"])\n\n
+
+print(thisset) \n\n
+
+OUTPUT:\n
+>> {\'apple\', \'grapes\', \'orange\', \'mango\', \'cherry\', \'banana\'} \n\n\n
+
+
+Dizinin Uzunluğu\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+print(len(thisset)) \n\n
+
+OUTPUT:\n
+>> 3 \n\n\n
+
+
+Öğe Silmek\n\n
+
+Kullanılan 2 adet öğe silme methodu bulunmaktadır, bu methodlar;\n\n
+
+remove() ve discard() methodlarıdır.\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+thisset.remove("banana") \n\n
+
+print(thisset) \n\n
+
+OUTPUT:\n
+>> {\'apple\', \'cherry\'} \n\n
+
+# Eğer remove fonksiyonuna parametre olarak girilen değer dizide yoksa hata meydana gelir.\n\n
+
+Örnek : \n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+thisset.discard("banana")\n\n
+
+print(thisset) \n\n
+
+OUTPUT:\n
+>> {\'cherry\', \'apple\'} \n\n
+
+# Discard methodu ise silinmek istenen öğe yoksa bile hata mesajı döndürmez.\n\n
+
+# pop() methodu koleksiyonlardan en son öğeyi silmek için kullanılır fakat diziler sıralı bir koleksiyon olmadığı için bu öğenin hangisi olacağını bilmek mümkün değildir. Rastgele bir öğe silme işlemi yapar diyebiliriz.\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+x = thisset.pop()\n\n
+
+print(x)\n
+print(thisset) \n\n
+
+OUTPUT:\n
+>> cherry\n
+>> {\'banana\', \'apple\'}   # Program her çalıştırıldığında Output değişecektir\n\n\n
+
+
+Tüm Öğeleri Silmek\n\n
+
+Bu işlem için clear() methodu kullanılır. Bütün öğeleri temizler\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+thisset.clear()\n\n
+
+print(thisset) \n\n
+
+OUTPUT:\n
+>> set()\n\n\n
+
+
+Diziyi Silmek\n\n
+
+Diğer koleksiyonlarda olduğu gibi dizilerde\'de del keywordu kullanılarak dizi silinebilir\n\n
+
+Örnek:\n\n
+
+thisset = {"apple", "banana", "cherry"}\n
+del thisset\n
+print(thisset) # Dizi silindiği için hata mesajı gelecektir\n\n
+
+OUTPUT:\n
+>> 	Traceback (most recent call last):\n
+  	File "demo_set_del.py", line 5, in &lt;module>\n
+   	print(thisset) #this will raise an error because the set no longer exists\n
+	NameError: name \'thisset\' is not defined\n\n\n\n
+
+
+
+İki Diziyi Birleştirme\n\n
+
+Python\'da iki veya daha fazla diziyi birleştirmenin birkaç yolu vardır.\n\n
+
+Her iki dizideki tüm öğeleri içeren yeni bir diziyi döndüren union() methodu veya bir dizideki tüm öğeleri başka bir diziye ekleyen update() methodu kullanılabilir. Bu iki method tekrarlanacak öğeleri diziye eklemez.\n\n
+
+Örnek:\n\n
+
+set1 = {"a", "b" , "c"}\n
+set2 = {1, 2, 3}\n\n
+
+set3 = set1.union(set2)\n
+print(set3)\n\n
+
+OUTPUT:\n
+>> {2, 3, \'a\', 1, \'b\', \'c\'}\n\n
+
+Örnek:\n\n
+
+set1 = {"a", "b" , "c"}\n
+set2 = {1, 2, 3}\n\n
+
+set1.update(set2)\n
+print(set1)\n\n
+
+OUTPUT:\n
+>> {1, \'c\', 3, \'b\', \'a\', 2}\n\n\n
+
+
+Tüm Dizi Methodları\n\n
+
+	Method 					Description\n\n
+
+	add()					            Bir öğe ekler\n
+	clear()					            Tüm öğeleri siler\n
+	copy()					            Dizinin kopyasını döndürür\n
+	difference() 			            Parametre olarak verilen dizilerin farklı öğelerini dizi olarak döndürür\n
+	difference_update() 	            Parametre olarak verilen dizide bulunan öğeleri diğer diziden siler\n
+	discard()				            Parametre olarak verilen öğeyi siler\n
+	intersection()			            Parametre olarak verilen dizilerin kesişimini, bir dizi olarak döndürür\n
+	intersection_update()	            Parametre olarak verilen dizilerde bulunmayan öğeleri diziden siler\n
+	isdisjoint()			            İki dizinin kesişiminin olup olmadığını döndürür\n
+	issubset()				            Başka bir dizinin bu diziyi içerip içermediğini döndürür\n
+	issuperset()			            Dizinin başka bir dizi içerip içermediğini döndürür\n
+	pop()	 				            Diziden rastgele bir öğe siler\n
+	remove()				            Diziden parametre olarak verilen öğeyi temizler\n
+	symmetric_difference()			    İki dizinin simetrik farkı olan diziyi döndürür\n
+	symmetric_difference_update() 		İki dizi arasındaki simetrik farklılıkları ekler\n
+	union()					            Verilen dizileri birleştirir ve birleşik diziyi döndürür\n
+	update()				            Verilen dizileri birbiriyle birleştirerek günceller\n
+
+        </item>
+        <item>
+            Sözlük sırasız, değiştirilebilir ve indexlere eklenmiş bir koleksiyondur. Python\'da sözlükler süslü parantez ile yazılır, anahtarları ve değerleri vardır. Key - Value şeklinde eşleşme yapılarak veri bu koleksiyon içinde tutulur\n\n
+
+Dictionary Oluşturma\n\n
+
+thisdict = { # İlk öğeler key ":" işaretinden sonraki öğeler value olarak adlandırılır.\n
+  "brand": "Ford", # Alt alta yazılmak zorunda değildir fakat okunabilirlik açısından önemlidir\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+print(thisdict)\n\n
+
+OUTPUT:\n
+>> {\'brand\': \'Ford\', \'model\': \'Mustang\', \'year\': 1964}\n\n
+
+Yapıcı Method ile Dictionary Oluşturma (Constructor)\n\n
+
+thisdict = dict(brand="Ford", model="Mustang", year=1964)\n
+# anahtarların(keys) tırnak içinde olmadığına dikkat edilmeli\n
+# ":" operatörü yerine "=" operatörü kullanıldığına dikkat edilmeli\n
+print(thisdict)\n\n\n
+
+
+Öğeye Erişim\n\n
+
+Bir sözlüğün öğelerine köşeli parantez içindeki anahtar değerine (key) bakarak ulaşılabilir\n\n
+
+Örnek:\n\n
+
+x = thisdict["model"] # model anahtarının sahip olduğu değeri x değişkenine atar\n\n
+
+OUTPUT:\n
+>> Mustang\n\n
+
+Ayrıca get() methoduda aynı işlevi görmektedir\n\n
+
+Örnek:\n\n
+
+x = thisdict.get("model")\n\n
+
+OUTPUT:\n
+>> Mustang\n\n\n
+
+
+Değer Değiştirme\n\n
+
+Belirli bir değerin anahtar adının referansı ile istenilen işlem yapılabilir\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+thisdict["year"] = 2018 # Dictionary içindeki year anahtarının değeri 2018 olarak değiştirildi\n\n
+
+OUTPUT:\n
+>> {\'brand\': \'Ford\', \'model\': \'Mustang\', \'year\': 2018}\n\n\n
+
+
+Dictionary ile Döngü Kullanımı\n\n
+
+For döngüsü kullanarak sözlükte döngü kullanılabilir.\n\n
+
+Bir sözlükte döngü yaparken, dönüş değeri sözlüğün anahtarlarıdır, ancak değerleri döndürme yöntemleri de vardır.\n\n\n
+
+
+Örnek:\n
+ # Tüm keyleri(anahtar) yazdırır\n\n
+
+thisdict = {\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n\n
+
+for x in thisdict:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> brand\n
+>> model\n
+>> year\n\n
+
+Örnek:\n
+ # Tüm values(değerler) yazdırır\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+for x in thisdict:\n
+  print(thisdict[x])\n\n
+
+OUTPUT:\n
+>> Ford\n
+>> Mustang\n
+>> 1964\n\n\n
+
+
+Aynı işlevi gören bir diğer yöntem values() methodunu kullanmaktır\n\n
+
+Örnek:\n\n
+
+for x in thisdict.values():\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> Ford\n
+>> Mustang\n
+>> 1964\n\n\n
+
+
+Hem key hem de value değerlerini yazdırmak için items() methodu kullanılabilir\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+for x, y in thisdict.items():\n
+  print(x, y)\n\n
+
+OUTPUT:\n
+>> brand Ford\n
+>> model Mustang\n
+>> year 1964\n\n\n
+
+
+Anahtar Varlığını Kontrolü\n\n
+
+Belirli bir anahtarın sözlükte bulunup bulunmadığını belirlemek için "in" anahtar sözcüğünü kullanılır\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+if "model" in thisdict:\n
+  print("evet, model anahtarı dictionary içinde bulunuyor")\n\n
+
+OUTPUT:\n
+>> evet, model anahtarı dictionary içinde bulunuyor\n\n
+
+Dictionary Uzunluğu\n\n
+
+Dictionary uzunluğu len() methodu kullanılarak elde edilir\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n\n
+
+print(len(thisdict))\n\n
+
+OUTPUT:\n
+>> 3\n\n
+
+Öğe Ekleme\n\n
+
+Dictionary içine bir öğe eklemek, yeni bir dizin anahtarı kullanılarak ve buna bir değer atanarak yapılır: (Key - Value)\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+thisdict["color"] = "red" # Yeni anahtar ekler = color, eklenen anahtarın değerini ekler= red\n
+print(thisdict)\n\n
+
+OUTPUT:\n
+>> {\'brand\': \'Ford\', \'model\': \'Mustang\', \'year\': 1964, \'color\': \'red\'}\n\n
+
+Öğe Silme\n\n
+
+Bir dictionary\'den öğe kaldırmak için birkaç yöntem vardır:\n\n
+
+pop() , popitem() , clear() , del yöntemleri kullanılabilir\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n\n
+
+thisdict.pop("model") # model anahtarını ve değerini siler\n
+thisdict.popitem() # en son eklenmiş olan key-value çiftini siler (year:1964 silinir)\n
+thisdict.clear() # Tüm dictionary öğelerini siler\n
+del thisdict["model"] # model anahtarını ve değerini siler\n
+del thisdict # Dictionary koleksiyonunu tamamen siler, hiç oluşturulmamış gibi olur\n\n\n
+
+
+Dictionary Kopyalama\n\n
+
+Bir dictionaryi sadece dict2 = dict1 yazarak kopyalayamazsınız, çünkü dict2 sadece dict1\'e bir referans olacak ve dict1\'de yapılan değişiklikler otomatik olarak dict2\'de de yapılacaktır.\n\n
+
+Bir kopya oluşturmanın yolları vardır, bunlardan biri copy() diğeri dict() methodu kullanmaktır\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+mydict = thisdict.copy()\n
+print(mydict)\n\n
+
+OUTPUT:\n
+>> {\'brand\': \'Ford\', \'model\': \'Mustang\', \'year\': 1964}\n\n
+
+Örnek:\n\n
+
+thisdict =	{\n
+  "brand": "Ford",\n
+  "model": "Mustang",\n
+  "year": 1964\n
+}\n
+mydict = dict(thisdict)\n
+print(mydict)\n\n
+
+OUTPUT:\n
+>> {\'brand\': \'Ford\', \'model\': \'Mustang\', \'year\': 1964}\n\n\n
+
+
+İç içe Dictionary (Nested)\n\n
+
+Bir dictionary içerisinde bir çok dictionary içerebilir, buna iç içe sözlükler (Nested Dictionaries) denir. Üç dictionary içeren bir dictionary oluşturalım.\n\n
+
+myfamily = { # myfamily adındaki ana (main) dictionary\n
+  "child1" : { # myfamily dictionary içerisindeki child1 isimli dictionary\n
+    "name" : "Ayşe",\n
+    "year" : 2004\n
+  },\n
+  "child2" : { # myfamily dictionary içerisindeki child2 isimli dictionary\n
+    "name" : "Ahmet",\n
+    "year" : 2007\n
+  },\n
+  "child3" : { # myfamily dictionary içerisindeki child3 isimli dictionary\n
+    "name" : "Mehmet",\n
+    "year" : 2011\n
+  }\n
+}\n\n
+
+Daha fazla önerilen diğer bir tanımlama biçimi ise şöyledir;\n\n
+
+child1 = {\n
+  "name" : "Emil",\n
+  "year" : 2004\n
+}\n
+child2 = {\n
+  "name" : "Tobias",\n
+  "year" : 2007\n
+}\n
+child3 = {\n
+  "name" : "Linus",\n
+  "year" : 2011\n
+}\n\n
+
+# Tüm dictionaryler ayrı olarak tanımlanıp isimlerinin referansı ile ana dictionarye atanır\n
+myfamily = {\n
+  "child1" : child1,\n
+  "child2" : child2,\n
+  "child3" : child3\n
+} \n
+        </item>
+        <item>
+            Koşul ifadeleri ile herhangi bir koşul kontrol edilir. Bu ifadeler programlarda olmazsa olmaz bir yere sahiptir ve bir çok yerde kullanılmaktadır.\n
+Python matematikte olağan mantıksal koşulları destekler:\n\n
+
+    Eşit: a == b\n
+    Eşit Değil: a != b\n
+    Küçüktür: a &lt; b\n
+            Eşit veya daha küçük: a &lt;= b
+    Büyüktür: a > b\n
+    Büyük veya eşit: a >= b\n\n
+
+Bu koşullar çoğunlukla "if ifadeleri" ve döngülerde olmak üzere çeşitli şekillerde kullanılabilir.\n
+İf anahtar sözcüğü kullanılarak bir "if ifadesi" yazılır\n\n\n
+
+
+Örnek:\n\n
+
+a = 33\n
+b = 200\n
+if b > a: # Eğer b > a true ise if bloğunun içindeki kodlar çalıştırılır, false ise çalıştırılmaz\n
+  print("b sayısı a sayısından büyüktür")\n\n
+
+OUTPUT:\n
+>> b sayısı a sayısından büyüktür\n\n
+
+Bu örnekte, b\'nin a\'dan büyük olup olmadığını kontrol etmek için if ifadesinin bir parçası olarak kullanılan iki değişken (a ve b) kullanıyoruz. A = 33 ve b = 200 olduğu için 200\'ün 33\'ten büyük olduğunu biliyoruz ve bu nedenle "b\'nin a\'dan büyük" olduğu ekrana yazdırıyoruz.\n\n\n
+
+
+Kod Bloğu\n\n
+
+Python, koddaki kapsamı tanımlamak için girintiye (bir satırın başındaki boşluk) dayanır. Diğer programlama dilleri genellikle bu amaçla süslü parantez kullanır. Python süslü parantez kullanmadan satır başında TAB boşluğu bırakılan yerler kod bloğunun içine girer. Boşluksuz devam edilen kodlar o bloktan çıkmış olur\n\n\n
+
+
+Örnek:\n\n
+
+a = 33\n
+b = 200\n
+if b > a:\n
+print("b is greater than a") # Hata döndürecektir\n\n
+
+Doğru Kullanım:\n\n
+
+a = 33\n
+b = 200\n
+ # if bloğunun kodları satır başlarında tab boşluğu bırakılarak yazılmalıdır. (Tab zorunlu değildir)\n
+if b > a:\n
+    print("b is greater than a") # you will get an error\n\n\n
+
+
+Elif\n\n
+
+Elif anahtar sözcüğü, "önceki koşullar doğru değilse, bu koşulu dene" deyiminin pythonca yoludur. Bir if ifadesinde sınırsız sayıda elif yazılabilir.\n\n\n
+
+
+Örnek:\n\n
+
+a = 33\n
+b = 33\n
+if b > a:\n
+  print("b > a")\n
+elif a == b:\n
+  print("a = b")\n\n
+
+OUTPUT:\n
+>> a = b\n\n\n
+
+
+Bu örnekte a, b\'ye eşittir, bu nedenle ilk koşul doğru değildir, ancak elif koşulu doğrudur ve "a = b" ekranına yazdırılır.\n\n\n
+
+
+Else\n\n
+
+Else anahtar sözcüğü, kendisinden önce hiçbir koşul doğru değil ise en son bir koşula bağlı olmaksızın çalıştırılacak kodları barındırır\n\n
+
+Örnek:\n\n
+
+a = 200\n
+b = 33\n
+if b > a:\n
+  print("b > a")\n
+elif a == b:\n
+  print("a = b")\n
+else:\n
+  print("a > b)\n\n\n
+
+
+OUTPUT:\n
+>> a > b\n\n
+
+Bu örnekte a, b\'den büyüktür, bu nedenle ilk koşul doğru değildir, ayrıca elif koşulu da doğru değildir ve program else koşuluna ilerler, else içindeki kodlar yazdırılır\n\n
+
+Ayrıca else koşulu elif koşulları olmadan da kullanılabilir\n\n
+
+a = 200\n
+b = 33\n
+if b > a:\n
+  print("b > a")\n
+else:\n
+  print("b &lt;= a")\n\n
+
+OUTPUT:\n
+>> b &lt;= a\n\n\n
+
+
+Kısa Yoldan if Kullanımı\n\n
+
+Yürütülecek tek bir ifadeniz varsa, ifadeyi if ifadesiyle aynı satıra koyabilirsiniz\n\n
+
+if a > b: print("a > b")\n\n\n
+
+
+Kısa Yoldan if - Else Kullanımı\n\n
+
+a = 2\n
+b = 330\n
+print("A") if a > b else print("B") # a büyükse b\'den A yazdır, değilse B yazdır\n\n
+
+Bu teknikler genel olarak Ternary Operators veya Conditional Expressions olarak bilinir\n\n
+
+Tek satırda çoklu koşul ifadesi:\n\n
+
+a = 330\n
+b = 330\n
+print("A") if a > b else print("=") if a == b else print("B")\n\n\n
+
+
+Ve Operatörü (and &amp;)\n\n
+
+Ve anahtar sözcüğü mantıksal bir operatördür ve koşullu ifadeleri birleştirmek için kullanılır\n\n
+
+Örnek:\n\n
+
+a = 200\n
+b = 33\n
+c = 500\n
+# A sayısı B sayısından ve C sayısı A sayısından büyük mü diye kontrol eder\n
+if a > b and c > a:\n
+  print("İki koşul da doğru")\n\n\n
+
+
+OUTPUT:\n
+>> İki koşul da doğru\n\n\n
+
+
+Veya (Or |)\n\n
+
+Veya anahtar sözcüğü mantıksal bir operatördür ve koşullu ifadeleri birleştirmek için kullanılır\n\n
+
+Örnek:\n\n
+
+a = 200\n
+b = 33\n
+c = 500\n
+# A sayısı büyükse B sayısından veya A sayısı büyükse C sayısından\n
+if a > b or a > c:\n
+  print("En az bir koşul doğrudur")\n\n
+
+OUTPUT:\n
+>> En az bir koşul doğrudur\n\n\n
+
+
+İç İçe İf Koşullandırması\n\n
+
+x = 41\n\n
+
+if x > 10:\n
+  print("10dan büyüktür")\n
+  if x > 20:\n
+    print("Ayrıca 20den de büyüktür")\n
+  else:\n
+    print("ama 20den büyük değildir")\n\n
+
+OUTPUT:\n
+>> 10dan büyüktür\n
+>> Ayrıca 20den de büyüktür\n\n\n
+
+
+Pass İfadesi\n\n
+
+if koşulları boş olamaz ancak herhangi bir nedenle içeriği olmayan bir if ifadesine sahipseniz, hata almamak için pass deyimi yazmak zorunludur\n\n
+
+a = 33\n
+b = 200\n\n
+
+if b > a:\n
+  pass\n
+        </item>
+        <item>
+            Python\'un iki ilkel(primitive) döngü komutu vardır:\n\n
+
+    - While döngüsü\n
+    - for döngüsü\n\n\n
+
+
+While Döngüsü\n\n
+
+While döngüsü ile, bir koşul doğru olduğu sürece kod bloğu içerisindeki ifadeler yürütülür.\n\n
+
+Örnek:\n\n
+
+i = 1\n
+while i &lt;6: # i sayısı 6\'dan küçük olduğu sürece kod bloğunu çalıştırır\n
+  print(i)\n
+  i += 1\n\n
+
+OUTPUT:\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n\n
+
+While koşulundaki değişkenin değerinin değiştirilmediği durumlarda döngü sonsuz olarak çalışır.\n
+Bu duruma sonsuz döngü adı verilir, koşulumuzda değişiklik yapmayı unutmamalıyız.\n\n
+
+While döngüsü ilgili değişkenlerin hazır olmasını gerektirir, bu örnekte 1 olarak ayarladığımız bir indeksleme değişkeni tanımlamamız gerekir.\n\n\n
+
+
+Break İfadesi\n\n
+
+Break deyimi ile while koşulu doğru olsa bile döngüyü durdurabiliriz\n\n
+
+i = 1\n
+while i &lt;6: # i değeri 6\'dan küçük oldukça döngüye gir\n
+  print(i)   # i değerini yazdır\n
+  if i == 3: # Eğer i = 3 ise\n
+    break    # Döngüyü sonlandır ve çık\n
+  i += 1     # i değerini 1 arttır\n\n\n
+
+
+Continue İfadesi\n\n
+
+Continue ifadesi ile mevcut işleyişi o kod satırında durdurabilir ve bir sonraki ile devam edebiliriz\n\n
+
+i = 0\n
+while i &lt;6: # i değeri 6\'dan küçük oldukça döngüye gir\n
+  i += 1     # i değerini 1 arttır\n
+  if i == 3: # Eğer i = 3 ise\n
+    continue # işleyişi durdur ve\n
+  print(i)\n\n\n
+
+
+Else İfadesi\n\n
+
+Else deyimiyle, koşul artık doğru olmadığında bir kod bloğunu bir kez çalıştırılabilir\n\n
+
+i = 1\n
+while i &lt;6:\n
+  print(i)\n
+  i += 1\n
+else:\n
+  print("i artık 6 dan küçük değil")\n\n
+
+OUTPUT:\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n
+>> i is no longer less than 6\n
+
+        </item>
+        <item>
+            For döngüsü bir koleksiyon üzerinde(liste, tuple, dictionary, dizi veya string) yineleme/öteleme (iterating) yapmak için kullanılır.\n\n
+
+Diğer programlama dillerindeki for anahtar sözcüğüne benzer ve diğer nesne yönelimli programlama dillerinde bulunan bir yineleyici yöntemi gibi çalışır.\n
+For döngüsü ile bir liste, tuple, dictionary, dizi, string için bir kod bloğu yürütülebilir\n\n
+
+Örnek:\n\n
+
+ fruits = ["apple", "banana", "cherry"]\n
+for x in fruits:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry\n\n\n
+
+
+Bir Dizeden Döngü (String Döngüsü)\n\n
+
+Stringler yinelenebilir nesnelerdir, içlerindeki her bir karakter ayrı bir öğeymiş gibi sıralanır.\n\n
+
+for x in "merhaba":\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> m\n
+>> e\n
+>> r\n
+>> h\n
+>> a\n
+>> b\n
+>> a\n\n\n
+
+
+Break İfadesi\n\n
+
+Break deyimi ile döngüyü tüm öğeler arasında döngü yapmadan durdurabiliriz\n\n
+
+Örnek:\n\n
+
+fruits = ["apple", "banana", "cherry"]\n
+for x in fruits:\n
+  print(x)\n
+  if x == "banana": # x değeri banana\'ya eşit ise\n
+    break           # Döngüden çık\n\n\n
+
+
+OUTPUT:\n
+>> apple\n
+>> banana\n\n\n
+
+
+Örnek:\n\n
+
+fruits = ["apple", "banana", "cherry"]\n
+for x in fruits:\n
+  if x == "banana": # X == banana ise\n
+    break  	    # Döngüden çık\n
+  print(x)          # X değerini yazdır (Print fonksiyonu if bloğunun içinde değildir.)\n\n\n
+
+
+OUTPUT:\n
+>> apple\n\n\n
+
+
+Continue Deyimi\n\n
+
+Continue ifadesi ile döngünün geçerli yinelemesini durdurabilir ve bir sonraki ile devam edilir\n\n
+
+fruits = ["apple", "banana", "cherry"]\n
+for x in fruits:\n
+  if x == "banana":\n
+    continue        # Döngünün bu adımını\n
+  print(x)\n\n\n
+
+
+OUTPUT:\n
+>> apple\n
+>> cherry\n\n\n
+
+
+Range () Fonksiyonu\n\n
+
+Belirli bir sayıda kod kümesi arasında geçiş yapmak için range () işlev kullanılabilir.\n
+Range () fonksiyonu, varsayılan olarak 0\'dan başlayarak bir sayı dizisi döndürür ve 1 (varsayılan olarak) artar ve belirtilen bir sayıyla biter.\n\n
+
+Örnek:\n\n
+
+for x in range(6):\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> 0\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n\n
+
+# range(6) aralığının 0 ila 6 değerleri değil, 0 ila 5 değerleri olduğunu unutmayın.\n\n
+
+Range fonksiyonunun başlangıç değeri de değiştirilebilir\n\n
+
+for x in range(2, 6):\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n\n\n
+
+
+Range fonksiyonunun arttırım değeri de değiştirilebilir\n\n
+
+for x in range(2, 20, 3): # 2\'den başla, 20\'ye kadar 3 arttırarak ilerle\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> 2\n
+>> 5\n
+>> 8\n
+>> 11\n
+>> 14\n
+>> 17\n\n\n
+
+
+For Döngüsünde Else Deyimi\n\n
+
+For döngüsündeki else anahtar sözcüğü, döngü tamamlandığında yürütülecek bir kod bloğunu belirtir\n\n
+
+for x in range(6):\n
+  print(x)\n
+else:\n
+  print("Finally finished!")\n\n
+
+OUTPUT:\n
+>> 0\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n
+>> Finally finished!\n\n\n
+
+
+İç İçe Döngüler (Nested Loops)\n\n
+
+"İç döngü", "dış döngü" nün her yinelemesi için bir kez yürütülür\n\n
+
+Örnek:\n\n
+
+# Tüm sıfatları tüm meyveler için yazdırır\n
+adj = ["red", "big", "tasty"]\n
+fruits = ["apple", "banana", "cherry"]\n\n
+
+for x in adj:\n
+  for y in fruits:\n
+    print(x, y)\n\n
+
+OUTPUT:\n
+>> red apple\n
+>> red banana\n
+>> red cherry\n
+>> big apple\n
+>> big banana\n
+>> big cherry\n
+>> tasty apple\n
+>> tasty banana\n
+>> tasty cherry\n\n\n
+
+
+Döngülerde Pass Deyimi\n\n
+
+For döngüleri boş olamaz, ancak herhangi bir nedenden dolayı içeriği olmayan bir for döngüsüne sahipseniz, hata almamak için pass deyimini koyun.\n\n
+
+for x in [0, 1, 2]:\n
+  pass\n
+        </item>
+        <item>
+            Fonksiyonlar yalnızca çağrıldığında çalışan bir kod bloğudur. Parametre olarak belirtilen verileri bir fonksiyona aktarabilirsiniz. Sonuç olarak bir fonksiyon veri döndürebilir veya hiç değer döndürmeden herhangi bir iş yapabilir.\n\n\n
+
+
+Fonksiyon Oluşturma\n\n
+
+def my_function():\n
+  print("Hello from a function")\n\n\n
+
+
+Fonksiyon Çağırma\n\n
+
+Bir fonksiyonu çağırmak için, işlev adını ve ardından parantez kullanın\n\n
+
+Örnek:\n\n
+
+def my_function():\n
+  print("Hello from a function")\n\n
+
+# Fonksiyon burada çağırılıyor. Eğer bir fonksiyon çağırılmazsa hiç bir işlem olmaz.\n
+my_function()\n\n
+
+OUTPUT:\n
+>> Hello from a function\n\n\n
+
+
+Argümanlar\n\n
+
+Bilgiler fonksiyonlara argüman olarak aktarılabilir.\n\n
+
+Bağımsız değişkenler fonksiyon adından sonra, parantez içinde belirtilir. İstediğiniz kadar argüman ekleyebilirsiniz, her birini virgülle ayırmak gerekir.\n\n
+
+Aşağıdaki örnekte bir bağımsız değişkeni (isim) olan bir fonksiyon vardır. Fonksiyon çağrıldığında tam adı yazdırmak için fonksiyonun içinde kullanılan bir isim iletiriz\n\n
+
+Örnek:\n\n
+
+def my_function(isim):\n
+  print(isim + "Öztürk")\n\n
+
+my_function("Oğuzhan")\n
+my_function("Mısra")\n
+my_function("Timuçin")\n\n
+
+OUTPUT:\n
+>> Oğuzhan Öztürk\n
+>> Mısra Öztürk\n
+>> Timuçin Öztürk\n\n\n
+
+
+Argüman Sayısı\n\n
+
+Varsayılan olarak bir fonksiyon doğru sayıda argümanla çağrılmalıdır. Yani fonksiyon 2 bağımsız değişken bekliyorsa daha fazla değil daha az değil, 2 bağımsız değişkenle çağırmanız gerekir.\n\n
+
+def my_function(firstname, lastname):\n
+  print(firstname + " " + lastname)\n\n
+
+my_function("Ali", "Veli")\n\n
+
+OUTPUT:\n
+>> Ali Veli\n\n
+
+Eğer bir fonksiyona istenen sayıdan az veya fazla değişken ile çağırmak istenirse hata oluşur\n\n\n
+
+
+İsteğe Bağlı Bağımsız Değişken\n\n
+
+Fonksiyona kaç bağımsız değişken aktarılacağını bilmiyorsanız, fonksiyon tanımında parametre adının önüne * ekleyin.\n\n
+
+Bu şekilde fonksiyon bir dizi bağımsız değişken alır ve öğelere buna göre erişebilirccccccccccccc\n\n\n
+
+
+Örnek:\n\n
+
+def my_function(*kids):\n
+  print("The youngest child is " + kids[2])\n\n
+
+my_function("Naz", "Efecan", "Deniz")\n\n\n
+
+
+OUTPUT:\n
+>> The youngest child is Deniz\n\n\n
+
+
+Keyword Argümanları\n\n
+
+Ayrıca key - value sözdizimi ile bağımsız değişkenler gönderebilirsiniz.\n
+Bu şekilde argümanların sırası önemli değildir.\n\n
+
+def my_function(child3, child2, child1):\n
+  print("The youngest child is " + child3)\n\n
+
+my_function(child1 = "Naz", child2 = "Efecan", child3 = "Deniz")\n\n
+
+OUTPUT:\n
+>> Deniz\n\n\n
+
+
+İsteğe Bağlı Keyword Argümanları\n\n
+
+Fonksiyona kaç keyword bağımsız değişkeninin aktarılacağını bilmiyorsanız, fonksiyon tanımındaki parametre adından önce iki yıldız ekleyin: (**)\n\n
+
+Bu şekilde fonksiyon bir argüman sözlüğü alır ve öğelere buna göre erişebilir\n\n\n
+
+
+def my_function(**kid):\n
+  print("His last name is " + kid["lastname"])\n\n
+
+my_function(firstname = "Tobias", lastname = "Refsnes")\n\n
+
+OUTPUT:\n
+>> His last name is Refsnes\n\n\n
+
+
+Varsayılan Parametre Değeri\n\n
+
+Aşağıdaki örnek varsayılan bir parametre değerinin nasıl kullanılacağını gösterir.\n
+Fonksiyonu bağımsız değişken olmadan çağırırsak, varsayılan değerler kullanılır\n\n
+
+
+def my_function(country = "Turkey"):\n
+  print("I am from " + country)\n\n
+
+my_function("England")\n
+my_function("Germany")\n
+my_function()\n
+my_function("Brazil")\n\n
+
+OUTPUT:\n
+>> I am from England\n
+I am from Germany\n
+I am from Turkey\n
+I am from Brazil\n\n\n
+
+
+Argüman Olarak Liste Kullanımı\n\n
+
+Bir fonksiyona herhangi bir veri türü argümanı gönderebilirsiniz (dizi, string, sayı, liste, sözlük vb.) ve fonksiyon içinde aynı veri türü olarak değerlendirilir.\n\n
+
+Örneğin bir listeyi bağımsız değişken olarak gönderirseniz, fonksiyona ulaştığında yine bir liste olur\n\n
+
+Örnek:\n\n
+
+def my_function(food):\n
+  for x in food:\n
+    print(x)\n\n
+
+fruits = ["apple", "banana", "cherry"]\n\n
+
+my_function(fruits)\n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry\n\n\n
+
+
+Dönüş Değerleri\n\n
+
+Bir fonksiyonun değer döndürmesine izin vermek için return deyimi kullanılır\n\n
+
+def my_function(x):\n
+  return 5 * x\n\n
+
+print(my_function(3))\n
+print(my_function(5))\n
+print(my_function(9))\n\n
+
+OUTPUT:\n
+>> 15\n
+>> 25\n
+>> 45\n\n\n
+
+
+Pass Deyimi\n\n
+
+Fonksiyon tanımları boş olamaz ancak herhangi bir nedenle içerik içermeyen bir fonksiyon tanımınız varsa hata almamak için pass deyimi kullanılabilir\n\n
+
+def myfunction():\n
+  pass\n\n
+
+Özyineleme (Recursion)\n\n
+
+Python fonksiyon özyinelemesini de kabul eder.Bu da tanımlanmış bir fonksiyonun kendisini çağırabileceği anlamına gelir.\n\n
+
+Özyineleme ortak bir matematik ve programlama kavramdır. Bir fonksiyonun kendisini çağırdığı anlamına gelir. Bu bir sonuca ulaşmak için veriler arasında geçiş yapabileceğiniz anlamına gelir.\n\n
+
+Geliştiriciler özyinelemeye çok dikkat etmelidir çünkü asla sona ermeyen bir fonksiyonu veya fazla miktarda bellek veya işlemci gücü kullanan bir fonksiyonu yazması oldukça kolay olabilir. Bununla birlikte, doğru yazıldığında özyineleme programlama için çok etkili ve matematiksel olarak zarif bir yaklaşım olabilir.\n\n\n
+
+
+Bu örnekte tri_recursion() kendisini çağırmak için tanımladığımız bir fonskyiondur ("recurse"). K değişkenini veri olarak kullanırız, her tekrarladığımızda (-1) azalır. Özyineleme, koşul 0\'dan büyük olmadığında (yani 0 olduğunda) sona erer.\n\n
+
+def tri_recursion(k):\n
+  if(k > 0):\n
+    result = k + tri_recursion(k - 1)\n
+    print(result)\n
+  else:\n
+    result = 0\n
+  return result\n\n
+
+print("\n\nRecursion Example Results")\n
+tri_recursion(6)\n\n\n
+
+
+OUTPUT:\n
+>> Recursion Example Results\n
+>> 1\n
+>> 3\n
+>> 6\n
+>> 10\n
+>> 15\n
+>> 21\n
+        </item>
+        <item>
+
+Lambda fonksiyonları küçük bir anonim fonksiyonudur.\n
+Lambda fonksiyonu herhangi bir sayıda bağımsız değişken alabilir ancak yalnızca bir ifadeye sahip olabilir.\n\n\n
+
+
+Sözdizimi (Syntax)\n\n
+
+lambda arguments : expression\n\n
+
+İfade yürütülür ve sonuç döndürülür\n\n
+
+Örnek:\n\n
+
+x = lambda a : a + 10\n
+print(x(5)) \n\n
+
+OUTPUT:\n
+>> 15 \n\n
+
+ # Lambda fonksiyonu istenilen kadar argüman alabilir\n\n
+
+Örnek:\n\n
+
+x = lambda a, b : a * b\n\n\n
+
+
+Örnek:\n\n
+
+x = lambda a, b, c : a + b + c\n
+print(x(5, 6, 2)) \n\n
+
+OUTPUT:\n
+>> 13 \n\n\n
+
+
+Neden Lambda Kullanılır?\n\n
+
+Lambda\'nın gücü, başka bir fonksiyon içinde anonim bir fonksiyon olarak kullanıldığında daha iyi gösterilir.\n\n
+
+Bir bağımsız değişken alan fonksiyon tanımınız olduğunu ve bu bağımsız değişkenin bilinmeyen bir sayıyla çarpılacağını varsayalım:\n\n
+
+def myfunc(n):\n
+  return lambda a : a * n \n\n\n
+
+
+Gönderdiğiniz sayıyı her zaman iki katına çıkaran bir fonksiyon yapmak için bu fonksiyon tanımı kullanılabilir:\n\n
+
+def myfunc(n):\n
+  return lambda a : a * n\n\n
+
+mydoubler = myfunc(2)\n
+print(mydoubler(11))\n\n
+
+OUTPUT:\n
+>> 22\n\n
+
+Ya da gönderdiğiniz sayıyı her zaman üçe katlayan bir fonksiyon yapmak için aynı fonksiyon tanımı kullanılabilir:\n\n
+
+def myfunc(n):\n
+  return lambda a : a * n\n\n
+
+mytripler = myfunc(3)\n\n
+
+print(mytripler(11))\n\n
+
+OUTPUT:\n
+>> 33\n\n\n
+
+
+Veya her iki fonksiyon aynı programda kullanmak için aynı fonksiyon tanımını kullanın:\n\n
+
+def myfunc(n):\n
+  return lambda a : a * n\n\n
+
+mydoubler = myfunc(2)\n
+mytripler = myfunc(3)\n\n
+
+print(mydoubler(11))\n
+print(mytripler(11))\n\n
+
+OUTPUT:\n
+>> 22\n
+>> 33\n\n
+
+Kısa bir süre için anonim bir fonksiyon gerektiğinde lambda fonksiyonu kullanılabilir\n
+        </item>
+        <item>
+            Python\'un diziler için yerleşik desteği yoktur bunun yerine Python Listeleri (Lists) kullanılabilir\n
+Diziler, tek bir değişkende birden çok değeri saklamak için kullanılır:\n\n
+
+cars = ["Ford", "Volvo", "BMW"]\n\n\n
+
+
+Dizi Nedir?\n\n
+
+Dizi aynı anda birden fazla değeri tutabilen özel bir değişkendir.\n\n
+
+Bir öğe listeniz varsa (örneğin, araba isimleri listesi), arabaları tek değişkende saklamak şöyle görünebilir:\n\n
+
+car1 = "Ford"\n
+car2 = "Volvo"\n
+car3 = "BMW"\n\n
+
+Ancak ya arabalar arasında dolaşıp belirli bir tane bulmak istiyorsanız? Peki ya 3 değil, 300 arabanız olsaydı?\n\n
+
+Çözüm bir dizi!\n\n
+
+Bir dizi, tek bir ad altında birçok değeri tutabilir ve değerlere bir dizin(index) numarasına başvurarak erişilebilir.\n\n\n
+
+
+Öğelere Erişim\n\n
+
+Dizin(index) numarasına bakarak bir dizi öğesine başvurulur\n\n
+
+x = cars[0]\n\n
+
+İlk dizi öğesinin değerini değiştirin\n\n
+
+cars[0] = "Toyota"\n\n\n
+
+
+Dizi Uzunluğu\n\n
+
+Bir dizinin uzunluğunu (dizideki öğe sayısı) döndürmek için len() methodu kullanılıır\n\n
+
+x = len(cars)\n\n
+
+ # Bir dizinin uzunluğu her zaman en yüksek dizi dizininden bir daha fazladır.\n\n\n
+
+
+Döngü Dizisi Elemanları\n\n
+
+Bir dizinin tüm öğeleri arasında döngü yapmak için for "in" döngüsünü kullanılabilir\n\n
+
+for x in cars:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> Ford\n
+>> Volvo\n
+>> BMW\n\n\n
+
+
+Diziye Öğe Ekleme\n\n
+
+Bir diziye öğe eklemek için append() methodu kullanılabilir\n\n
+
+cars.append("Honda")\n\n\n
+
+
+Diziden Öğe Silme\n\n
+
+Bir diziye öğe silmek için pop() methodu kullanılabilir\n\n
+
+cars.pop(1)\n\n
+
+Ayrıca aynı işlev için remove() methodu kullanılabilir\n\n
+
+cars.remove("Volvo")\n\n\n
+
+
+Listenin remove() methodu yalnızca belirtilen değerin ilk oluşumunu kaldırır\n\n\n
+
+
+Dizi Methodları\n\n
+
+	Method 		Description\n\n
+
+	append()	Dizinin sonuna öğe ekler\n
+	clear()		Bütün öğeleri temizler\n
+	copy()		Liste kopyası döndürür\n
+	count()		Dizinin toplam öğe sayısını döndürür\n
+	extend()	Bir listenin öğelerini istenen listenin sonuna ekler\n
+	index()		Belirtilen değere sahip ilk öğenin index değerini döndürür\n
+	insert()	İstenen index değerine istenen öğeyi ekler\n
+	pop()		İstenen index değerindeki öğeyi siler\n
+	remove()	Belirtilen değere sahip ilk öğeyi kaldırır\n
+	reverse()	Listeyi sırası ile tersine çevirir\n
+	sort()		Listeyi sıralar\n
+        </item>
+        <item>
+            Python nesneye yönelik bir programlama dilidir. Hemen hemen her şey özellikleri ve yöntemleri ile bir nesnedir. Sınıf bir nesne oluşturucu veya nesne oluşturmak için bir "taslak" gibidir.\n\n
+
+Sınıf Oluşturma (Class)\n\n
+
+Sınıf oluşturmak için class deyimi kullanılır\n\n
+
+class MyClass:\n
+  x = 5\n\n
+
+Nesne oluşturma (Object)\n\n
+
+Nesneler oluşturmak için MyClass adlı sınıfı kullanabiliriz\n\n
+
+class MyClass:\n
+  x = 5\n
+p1 = MyClass()\n
+print(p1.x) \n\n\n
+
+
+OUTPUT:\n
+>> 5 \n\n\n
+
+
+__init__() Fonksiyonu\n\n
+
+Yukarıdaki örnekler en basit haliyle sınıflar ve nesnelerdir ve gerçek yaşam uygulamalarında gerçekten yararlı değildir.\n
+Sınıfların anlamını anlamak için  __init __ () fonksiyonunu anlamalıyız.\n\n
+
+Tüm sınıflar, sınıf başlatılırken her zaman yürütülen __init __ () adında bir fonksiyona sahiptir.\n\n
+
+Nesne özelliklerine veya nesne oluşturulurken yapılması gereken diğer işlemlere değer atamak için __init __ () fonksiyonunu kullanın\n\n\n
+
+
+Örnek:\n\n
+
+Kişi adlı bir sınıf oluşturun, ad ve yaş için değer atamak üzere __init __ () fonksiyonu kullanın:\n\n
+
+class Person:\n
+  def __init__(self, name, age):\n
+    self.name = name\n
+    self.age = age\n\n
+
+p1 = Person("John", 36)\n\n
+
+print(p1.name)\n
+print(p1.age) \n\n\n
+
+
+OUTPUT:\n
+>> John\n
+>> 36 \n\n
+
+ # Sınıf her yeni nesne oluşturmak için kullanıldığında __init __ () fonksiyonu otomatik olarak çağrılır.\n\n\n
+
+
+Object Methodları\n\n
+
+Nesneler de methodlar içerebilir. Nesnelerdeki methodlar, nesneye ait fonksiyonlardır.\n
+Kişi sınıfında bir method oluşturalım:\n\n
+
+Bir print basan fonksiyon ekleyin ve bu işlevi p1 nesnesinde yürütün:\n\n\n
+
+
+class Person:\n
+  def __init__(self, name, age):\n
+    self.name = name\n
+    self.age = age\n\n
+
+  def myfunc(self):\n
+    print("Hello my name is " + self.name)\n\n
+
+p1 = Person("John", 36)\n
+p1.myfunc() \n\n\n
+
+
+OUTPUT:\n
+>> Hello my name is John \n\n
+
+ # Self parametresi, sınıfın geçerli örneğine bir başvurudur ve sınıfa ait değişkenlere erişmek için kullanılır\n\n\n
+
+
+Self Parametresi\n\n
+
+Self parametresi, sınıfın geçerli örneğine bir başvurudur ve sınıfa ait değişkenlere erişmek için kullanılır.\n
+Self olarak adlandırılmak zorunda değildir, istediğiniz her şeyi çağırabilirsiniz, ancak sınıftaki herhangi bir fonksiyonun ilk parametresi olmalıdır.\n\n\n
+
+
+Bu örnekte Self yerine myobject deyimini kullanalım:\n\n
+
+class Person:\n
+  def __init__(myobject, name, age):\n
+    myobject.name = name\n
+    myobject.age = age\n\n
+
+  def myfunc(abc):\n
+    print("Hello my name is " + abc.name)\n\n
+
+p1 = Person("John", 36)\n
+p1.myfunc() \n\n\n
+
+
+Nesne Özelliklerini Değiştirme\n\n
+
+p1.age = 40\n\n
+
+Nesneden Özellik Silme\n\n
+
+del p1.age \n\n
+
+Nesne Silme\n\n
+
+del p1 \n\n\n
+
+
+Pass Deyimi \n\n
+
+Sınıf tanımları boş olamaz ancak herhangi bir nedenle içeriği olmayan bir sınıf tanımınız varsa, hata almamak için pass deyimini ekleyin.\n
+
+class Person:\n
+  pass\n
+        </item>
+        <item>
+            Kalıtım özelliği tüm yöntemleri ve özellikleri başka bir sınıftan miras alan bir sınıf tanımlamamıza olanak tanır.\n\n
+
+Ana sınıf, miras alınan ve temel sınıf olarak da adlandırılan sınıftır (Parent Class)\n\n
+
+Çocuk sınıfı (Child Class), türetilmiş sınıf olarak da adlandırılan başka bir sınıftan miras alan sınıftır.\n\n\n
+
+
+Ana Sınıf Oluşturma \n\n
+
+Herhangi bir sınıf bir üst sınıf olabilir, bu nedenle sözdizimi başka bir sınıf oluşturmakla aynıdır\n\n
+
+firstname ve lastname özellikleri ile bir printname methodlu Person adlı bir sınıf oluşturalım:\n\n\n
+
+
+class Person:\n
+  def __init__(self, firstname, lastname):\n
+    self.firstname = firstname\n
+    self.lastname = lastname\n\n
+
+  def printname(self):\n
+    print(self.firstname, self.lastname)\n\n
+
+ # Person adlı sınıfımızdan nesne oluşturup printname methodunu kullanalım:\n\n
+
+x = Person("John", "Doe")\n
+x.printname() \n\n\n
+
+
+OUTPUT:\n
+>> John Doe\n\n\n
+
+
+Çocuk Sınıf Oluşturma (Child Class)\n\n
+
+Başka bir sınıftan türetilen bir sınıf oluşturmak için alt sınıfı oluştururken üst sınıf parametre olarak gönderilir\n\n
+
+ class Student(Person):\n
+  pass\n\n
+
+ # Sınıfa başka bir özellik veya yöntem eklemek istemiyorsanız pass anahtar sözcüğünü kullanın\n\n
+
+Artık Student sınıfı, Person sınıfı ile aynı özelliklere ve methodlara sahiptir\n\n
+
+Örnek:\n\n
+
+class Person:\n
+  def __init__(self, firstname, lastname):\n
+    self.firstname = firstname\n
+    self.lastname = lastname\n\n
+
+  def printname(self):\n
+    print(self.firstname, self.lastname)\n\n
+
+class Student(Person):\n
+  pass\n\n
+
+x = Student("Mike", "Olsen")\n
+x.printname()\n\n\n
+
+
+OUTPUT:\n
+>> Mike Olsen\n\n\n
+
+
+__init__() Fonksiyonu\n\n
+
+Şimdiye kadar özelliklerini ve methodlarını üst öğesinden devralan bir alt sınıf oluşturduk\n\n
+
+__İnit __ () işlevini alt sınıfa eklemek istiyoruz (pass anahtar sözcüğü yerine)\n
+__init __ () fonksiyonu, sınıftan her yeni nesne oluşturulduğunda otomatik olarak çağrılır\n\n
+
+Örnek:\n
+
+class Student(Person):\n
+  def __init__(self, firstname, lastname):\n\n\n
+
+
+
+__init __ () fonksiyonu eklediğinizde, alt sınıf artık üst öğenin __init __ () fonksiyonunu devralmaz.\n\n
+
+Not: Child Classın __init __ () fonksiyonu, üst classın __init __ () mirasını geçersiz kılar.\n\n
+
+Üst classın (Parent) __init __ () fonksiyonunun mirasını korumak için üst öğenin __init __ () işlevine bir çağrı eklenir:\n\n
+
+class Student(Person):\n
+  def __init__(self, firstname, lastname):\n
+    Person.__init__(self, firstname, lastname)\n\n
+
+Şimdi __init __ () fonksiyonunu başarıyla ekledik ve üst sınıfın mirasını koruduk ve __init __ () fonksiyonuna kodları eklemeye hazırız.\n\n\n
+
+
+Super() Kullanımı\n\n
+
+Python ayrıca alt sınıfın tüm methodlarını ve özellikleri üst öğesinden devralmasını sağlayacak bir super () işlevine sahiptir:\n\n
+
+class Student(Person):\n
+  def __init__(self, fname, lname):\n
+    super().__init__(fname, lname)\n
+    # Person.__init__ ile aynı işlevi görür\n\n
+
+Super () fonksiyonunu kullanarak, üst öğenin adını kullanmaya gerek kalmadan otomatik olarak üst classtan methodlar ve özellikler kalıtılabilir.\n\n
+
+Özellik Ekleme\n\n
+
+Öğrenci sınıfına graduationyear(mezuniyet yılı) adı verilen bir özellik ekleyin:\n\n
+
+class Student(Person):\n
+  def __init__(self, firstname, lastname):\n
+    super().__init__(firstname, lastname)\n
+    self.graduationyear = 2019\n\n
+
+Aşağıdaki örnekte 2019 yılı bir değişken olmalı ve öğrenci nesneleri oluştururken Öğrenci sınıfına geçmelidir. Bunu yapmak için __init __ () işlevine başka bir parametre ekleyin:\n\n
+
+class Student(Person):\n
+  def __init__(self, firstname, lastname, year):\n
+    super().__init__(firstname, lastname)\n
+    self.graduationyear = year\n\n
+
+x = Student("Mike", "Olsen", 2019)\n\n\n
+
+
+Method Ekleme\n\n
+
+Öğrenci sınıfına welcome adlı bir method ekleyin:\n\n
+
+class Student(Person):\n
+  def __init__(self, firstname, lastname, year):\n
+    super().__init__(firstname, lastname)\n
+    self.graduationyear = year\n\n
+
+  def welcome(self):\n
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)\n\n
+
+OUTPUT:\n
+>> Welcome Mike Olsen to the class of 2019\n\n\n
+
+
+Alt sınıfta, üst sınıftaki bir fonksiyonla aynı ada sahip bir method eklerseniz, üst methodun mirası geçersiz kılınır.\n
+        </item>
+        <item>
+            Yineleyici, sayılabilecek sayıda değer içeren bir nesnedir.\n
+Yineleyici, yinelenebilen bir nesnedir, yani tüm değerler arasında geçiş yapabilirsiniz.\n\n
+
+Teknik olarak, Python\'da yineleyici, __iter __ () ve __mext __ () methodlarından oluşan yineleyici protokolünü uygulayan bir nesnedir.\n\n\n
+
+
+Yineleyici vs Yinelenebilir (Iterator vs Iterable)\n\n
+
+Listeler, tuplelar, sözlükler ve kümelerin hepsi yinelenebilir nesnelerdir. Bunlar bir yineleyici alabileceğiniz yinelenebilir kaplardır.\n\n
+
+ # List, Tuple, Dictionary, Sets are iterable objects\n\n
+
+Tüm bu nesneler, bir yineleyici kullanılabilmesi için iter() methoduna sahiptir:\n
+Bir tuple ile birlikte yineleyici kullanalım:\n\n
+
+mytuple = ("apple", "banana", "cherry")\n
+myit = iter(mytuple)\n\n
+
+print(next(myit))\n
+print(next(myit))\n
+print(next(myit))\n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry\n\n
+
+Stringler de birer yinelenebilir (iterable) objelerdir:\n\n
+
+ mystr = "banana"\n
+myit = iter(mystr)\n\n
+
+print(next(myit))\n
+print(next(myit))\n
+print(next(myit))\n
+print(next(myit))\n
+print(next(myit))\n
+print(next(myit))\n\n
+
+OUTPUT:\n
+>> b\n
+>> a\n
+>> n\n
+>> a\n
+>> n\n
+>> a\n\n
+
+Yineleyici ile Döngü Kullanımı\n\n
+
+Yinelenebilir nesneler ile döngü içerisinde yineleyici kullanılabilir:\n\n
+
+mytuple = ("apple", "banana", "cherry")\n\n
+
+# tüm tuple öğelerini sırayla dolaşır\n
+for x in mytuple:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> apple\n
+>> banana\n
+>> cherry\n\n
+
+For döngüsü aslında bir yineleyici nesnesi oluşturur ve her döngü için next() methodunu çalıştırır\n\n\n
+
+
+Yineleyici Oluşturma (Iterator)\n\n
+
+Yineleyici olarak bir nesne / sınıf oluşturmak için, nesnenize __iter __() ve __next __() methodlarını uygulamanız gerekir.\n\n
+
+Python Sınıfları / Nesneleri bölümünde öğrendiğiniz gibi, tüm sınıflar __init __() adlı bir işleve sahiptir, bu da nesne oluşturulurken bazı komutları yürütmenizi sağlar.\n\n
+
+__iter __() methodu benzer şekilde çalışır ancak her zaman yineleyici nesnesi kendisini döndürmelidir.\n
+__next __ () methodu ayrıca işlemler yapmanızı sağlar ve sıradaki bir sonraki öğeyi döndürmelidir.\n\n\n
+
+
+Örnek:\n\n
+
+1 ile başlayan sayıları döndüren bir yineleyici oluşturun ve her index bir artacaktır (1,2,3,4,5 vb. Döndürerek):\n\n
+
+class MyNumbers:\n
+  def __iter__(self):\n
+    self.a = 1\n
+    return self\n\n
+
+  def __next__(self):\n
+    x = self.a\n
+    self.a += 1\n
+    return x\n\n
+
+myclass = MyNumbers()\n
+myiter = iter(myclass)\n\n
+
+print(next(myiter))\n
+print(next(myiter))\n
+print(next(myiter))\n
+print(next(myiter))\n
+print(next(myiter))\n\n
+
+OUTPUT:\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n\n\n
+
+
+Yineleme Durdurma\n\n
+
+Yukarıdaki örnek, yeterince next() ifadeniz varsa veya for döngüsünde kullanılmışsa sonsuza kadar devam eder.\n\n
+
+Yinelemenin sonsuza kadar devam etmesini önlemek için StopIteration deyimini kullanabiliriz.\n\n
+
+__next __ () methodunda, yineleme belirtilen sayıda yapılırsa hatayı yükseltmek için bir sonlandırma koşulu ekleyebiliriz:\n\n
+
+ # 10 yineleme sonrasında duran iterator oluşturalım\n
+Örnek:\n\n
+
+class MyNumbers:\n
+  def __iter__(self):\n
+    self.a = 1\n
+    return self\n
+
+  def __next__(self):\n
+    if self.a \u003c= 10:\n
+      x = self.a\n
+      self.a += 1\n
+      return x\n
+    else:\n
+      raise StopIteration\n\n
+
+myclass = MyNumbers()\n
+myiter = iter(myclass)\n\n
+
+for x in myiter:\n
+  print(x)\n\n\n
+
+
+OUTPUT:\n
+>> 1\n
+>> 2\n
+>> 3\n
+>> 4\n
+>> 5\n
+>> 6\n
+>> 7\n
+>> 8\n
+>> 9\n
+>> 10\n
+        </item>
+        <item>
+            Bir değişken yalnızca oluşturulduğu bölgenin içinden kullanılabilir. Buna kapsam(scope) denir.\n\n\n
+
+
+Yerel Kapsam (Local Scope)\n\n
+
+Bir fonksiyon içinde oluşturulan bir değişken, o fonksiyonun yerel kapsamına aittir ve yalnızca bu fonksiyonun içinde kullanılabilir.\n\n
+
+Örnek:\n\n
+
+def myfunc():\n
+  x = 300\n
+  print(x)\n\n
+
+myfunc() \n\n
+
+OUTPUT:\n
+>> 300 \n\n\n
+
+
+Fonksiyon İçinde Fonksiyon\n\n
+
+Yukarıdaki örnekte açıklandığı gibi, x değişkeni fonksiyonun dışında kullanılamaz, ancak fonksiyonun içindeki herhangi bir fonksiyon için kullanılabilir:\n\n
+
+Örnek:\n\n
+
+def myfunc():\n
+  x = 300\n
+  def myinnerfunc():\n
+    print(x)\n
+  myinnerfunc()\n\n
+
+myfunc() \n\n
+
+OUTPUT:\n
+>> 300 \n\n\n
+
+
+Global Kapsam (Global Scope)\n\n
+
+Python kodunun ana gövdesinde oluşturulan bir değişken global bir değişkendir ve global kapsama aittir.\n\n
+
+Global değişkenler, global ve yerel herhangi bir kapsamdan elde edilebilir.\n\n
+
+Örnek:\n\n
+
+x = 300\n\n
+
+def myfunc():\n
+  print(x)\n\n
+
+myfunc()\n
+print(x)\n\n\n
+
+
+OUTPUT:\n
+>> 300\n
+>> 300 \n\n\n
+
+
+Değişkenleri Adlandırma\n\n
+
+Bir fonksiyonun içinde ve dışında aynı değişken adıyla çalışırsanız, Python bu değişkenlere biri global kapsamda (fonksiyon dışında) ve diğeri yerel kapsamda (fonksiyon içinde) kullanılabilen iki ayrı değişken olarak davranır:\n\n
+
+Örnek:\n\n
+
+x = 300 # GlOBAL X\n\n
+
+def myfunc():\n
+  x = 200 # YEREL X\n
+  print(x)\n\n
+
+myfunc() # yerel olan x değerini yazdırır = 200\n
+print(x) # global olan x değerini yazdırır = 300\n\n
+
+OUTPUT:\n
+>> 200\n
+>> 300\n\n\n
+
+
+Global Deyimi\n\n
+
+Genel bir değişken oluşturmanız gerekiyor, ancak yerel kapsamda kalıyorsanız, global anahtar sözcüğünü kullanabilirsiniz.\n\n
+
+Global anahtar sözcüğü değişkeni global yapar.\n\n
+
+Örnek:\n\n
+
+def myfunc():\n
+  global x\n
+  x = 300\n\n
+
+myfunc()\n
+print(x) \n\n\n
+
+
+OUTPUT:\n
+>> 300\n\n
+
+Ayrıca bir fonksiyonun içindeki genel bir değişkende değişiklik yapmak istiyorsanız global anahtar sözcüğünü kullanın:\n\n
+
+x = 300\n\n
+
+def myfunc():\n
+  global x\n
+  x = 200\n\n
+
+myfunc()\n
+print(x) \n\n
+
+OUTPUT:\n
+>> 200\n
+        </item>
+        <item>
+            Bir modülün kod kitaplığıyla aynı olduğunu düşünün.\n\n
+
+Uygulamanıza dahil etmek istediğiniz bir dizi fonksiyonu içeren bir dosyadır\n\n\n
+
+
+Modül Oluşturma\n\n
+
+Bir modül oluşturmak içn istediğiniz kodu .py dosya uzantılı bir dosyaya kaydedin:\n\n
+
+Örneğin bir mymodul isimli .py dosyası oluşturalım:\n\n
+
+def greeting(name):\n
+  print("Hello, " + name) \n\n\n
+
+
+Modül Kullanma\n\n
+
+Bir modülü kullanabilmek için o modülü proje dosyamıza import deyimi ile eklemeliyiz:\n\n
+
+Örnek:\n\n
+
+import mymodule\n\n
+
+mymodule.greeting("Jonathan")\n\n
+
+ # Bir modülden fonksiyon kullanırken, bu sözdizimini kullanın: module_name.function_name\n\n\n
+
+
+Modüldeki Değişkenler\n\n
+
+Modül daha önce açıklandığı gibi fonksiyonlar içerebilir, aynı zamanda her türdeki değişkenleri de (diziler, sözlükler, nesneler vb.) İçerebilir:\n\n
+
+Bu kodu mymodule.py olarak kaydedelim:\n\n
+
+person1 = {\n
+  "name": "John",\n
+  "age": 36,\n
+  "country": "Norway"\n
+} \n\n
+
+mymodule isimli modülü projeye import ettiğimizde person1 isimli sözlüğe erişebiliriz:\n\n
+
+import mymodule\n\n
+
+a = mymodule.person1["age"]\n
+print(a)\n\n
+
+OUTPUT:\n
+>> 3\n\n\n
+
+
+Modül Adlandırma\n\n
+
+Modül dosyasını istediğiniz gibi adlandırabilirsiniz, ancak dosya uzantısı .py olmalıdır\n\n
+
+Bir Modülü Yeniden Adlandırma\n\n
+
+Bir modülü içe aktarırken "as" anahtar sözcüğünü kullanarak bir takma ad oluşturabilirsiniz:\n\n\n
+
+
+import mymodule as mx\n\n
+
+a = mx.person1["age"]\n\n\n
+
+
+Dahili Modüller\n\n
+
+Python istediğiniz zaman içe aktarabileceğiniz birkaç yerleşik modül sunar.\n\n
+
+Platform isimli modülü import edip kullanalım:\n\n
+
+import platform\n\n
+
+x = platform.system()\n
+print(x) \n\n
+
+OUTPUT:\n
+>> Windows\n\n\n
+
+
+dir()  Fonksiyonu\n\n
+
+Bir modüldeki tüm fonksiyon adlarını (veya değişken adlarını) listeleyen yerleşik bir fonksiyondur\n\n
+
+Örnek:\n\n
+
+import platform\n\n
+
+ # Platform modülüne ait tüm tanımlanmış adları listeler\n
+x = dir(platform)\n
+print(x) \n\n\n
+
+
+OUTPUT:\n
+ # Platform modülünün içindeki tüm methodlar OUTPUT kısmında liste olarak gözükecektir\n
+ # Fazla içerik olduğundan dolayı kısa bir OUTPUT örneği şu şekildedir:\n\n
+
+ # [\'DEV_NULL\',  \'WIN32_CLIENT_RELEASES\', \'WIN32_SERVER_RELEASES\', \'__builtins__\',  \'__copyright__\',...]\n\n\n
+
+
+ dir() işlevi tüm modüllerde ve ayrıca kendi oluşturduğunuz modüllerdede kullanabilirsiniz\n\n\n
+
+
+Modülden İçe Aktar\n\n
+
+From anahtar sözcüğünü kullanarak bir modülden yalnızca parçaları içe aktarmayı seçebilirsiniz\n\n
+
+Örnek:\n\n
+
+# mymodule.py\n\n
+
+def greeting(name):\n
+  print("Hello, " + name)\n\n
+
+person1 = {\n
+  "name": "John",\n
+  "age": 36,\n
+  "country": "Norway"\n
+}\n\n\n
+
+
+Örnek:\n\n
+
+from mymodule import person1\n\n
+
+print (person1["age"])\n\n\n
+
+
+OUTPUT:\n
+>> C:\Users\MyName>python mymodule.py\n
+>> 36\n\n\n
+
+
+From anahtar sözcüğünü kullanarak içe aktarırken, modüldeki öğelere atıfta bulunurken modül adını kullanmayın.\n\n
+
+Örnek:\n\n
+
+ mymodule.person1["age"] yerine person1["age"]\n
+
+        </item>
+        <item>
+            Python\'daki bir tarih kendi başına bir veri türü değildir, ancak tarihlerle tarih nesneleri olarak çalışmak için datetime adlı bir modülü içe aktarabiliriz\n\n
+
+import datetime\n\n
+
+x = datetime.datetime.now()\n
+print(x)\n\n
+
+OUTPUT:\n
+>> 2020-01-04 22:21:29.723780 \n\n\n
+
+
+Tarih Çıktısı  (OUTPUT)\n\n
+
+Yukarıdaki örnekteki kodu yürüttüğümüzde sonuç şöyle olacaktır:\n
+2020-01-04 22:21:29.723780 \n\n
+
+Tarih yıl, ay, gün, saat, dakika, saniye ve mikrosaniyeyi içerir.\n\n
+
+Datetime modülünün date nesnesi hakkında bilgi döndürmek için birçok yöntemi vardır.\n
+İşte birkaç örnek ve bu bölümün ilerleyen kısımlarında onlar hakkında daha fazla bilgi edineceksiniz:\n\n
+
+Örnek:\n\n
+
+import datetime\n\n
+
+x = datetime.datetime.now()\n\n
+
+print(x.year)\n
+print(x.strftime("%A")) \n\n
+
+OUTPUT:\n
+>> 2020\n
+>> Wednesday\n\n\n
+
+
+tArih Nesneleri Oluşturma\n\n
+
+Bir tarih oluşturmak için datetime modülünün datetime() sınıfını (constructor) kullanabiliriz.\n\n
+
+Datetime() sınıfı, bir tarih oluşturmak için üç parametre gerektirir: yıl, ay, gün.\n\n
+
+Örnek:\n\n
+
+import datetime\n\n
+
+x = datetime.datetime(2020, 5, 4)\n
+print(x) \n\n
+
+OUTPUT:\n
+>> 2020-04-04 00:00:00 \n\n\n
+
+
+Datetime() sınıfı ayrıca zaman ve saat dilimi (saat, dakika, saniye, mikrosaniye, tzone) için parametreleri alır, ancak isteğe bağlıdır ve varsayılan 0 değerine sahiptir (saat dilimi için yok).\n\n\n
+
+
+Strftime () Methodu\n\n
+
+Datetime nesnesinin tarih nesnelerini okunabilir dizelere biçimlendirmek için bir methodu vardır.\n\n
+
+Yönteme strftime () adı verilir ve döndürülen dizenin biçimini belirtmek için bir parametre biçimi alır:\n\n
+
+Örnek:\n\n
+
+import datetime\n\n
+
+x = datetime.datetime(2018, 6, 1)\n
+print(x.strftime("%B"))\n\n
+
+OUTPUT:\n
+>> January\n\n\n\n
+
+
+
+	Tüm Referanslar\n\n
+
+	Directive 	Description 				Example\n
+	%a 		Weekday, short version 			Wed 	\n
+	%A 		Weekday, full version 			Wednesday \n
+	%w 		Weekday as a number 0-6, 0 is Sunday 	3 \n
+	%d 		Day of month 01-31 			31 	\n
+	%b 		Month name, short version 		Dec 	\n
+	%B 		Month name, full version 		December \n
+	%m 		Month as a number 01-12 		12 	\n
+	%y 		Year, short version, without century 	18 	\n
+	%Y 		Year, full version 			2018 	\n
+	%H 		Hour 00-23 				17 	\n
+	%I 		Hour 00-12 				05 	\n
+	%p 		AM/PM 					PM 	\n
+	%M 		Minute 00-59 				41 	\n
+	%S 		Second 00-59 				08 	\n
+	%f 		Microsecond 000000-999999 		548513 	\n
+	%z 		UTC offset 				+0100 	\n
+	%Z 		Timezone 				CST 	\n
+	%j 		Day number of year 001-366 		365 \n
+	%U 		Week number of year, Sunday as the first day of week, 00-53 	52 \n
+	%W 		Week number of year, Monday as the first day of week, 00-53 	52 	\n
+	%c 		Local version of date and time 		2018 	\n
+	%x 		Local version of date 			12/31/18 \n
+	%X 		Local version of time 			17:41:00 \n
+	%% 		A % character 				%\n
+        </item>
+        <item>
+            JSON, veri depolamak ve değiştirmek için kullanılan bir sözdizimidir.\n\n
+
+JSON, JavaScript nesne gösterimi (JavaScript Object Notation) ile yazılmış bir metindir.\n\n\n
+
+
+Python\'da JSON\n\n
+
+Python, JSON verileriyle çalışmak için kullanılabilen json adlı yerleşik bir pakete sahiptir.\n\n
+
+import json deyimi ile projelere rahatlıkla import edilebilir.\n\n\n\n
+
+
+
+Parse JSON - JSON biriminden Python birimine dönüştür\n\n
+
+Bir JSON Stringiniz varsa, json.loads () methodunu kullanarak bu Stringi ayrıştırabilirsiniz. Çıkan sonuç Python Dictionary koleksiyonu olacaktır.\n\n
+
+Örnek:\n\n
+
+import json\n\n
+
+ # JSON Formatı \n
+x =  \'{ "name":"John", "age":30, "city":"New York"}\'\n\n
+
+# parse x: JSON verisini dictionary olarak y değişkenine atar\n
+y = json.loads(x)\n\n
+
+# sonuç python dictionary olarak döner\n
+print(y["age"])\n\n\n
+
+
+OUTPUT:\n
+>> 30\n\n\n
+
+
+Python\'dan JSON\'a Dönüştürme\n\n
+
+Bir Python nesneniz varsa, json.dumps() methodunu kullanarak bir JSON stringine dönüştürebilirsiniz.\n\n
+
+Örnek:\n\n
+
+import json\n\n
+
+# Python nesnesi (dictionary):\n
+x = {\n
+  "name": "John",\n
+  "age": 30,\n
+  "city": "New York"\n
+}\n\n
+
+# JSON formatına dönüştürme:\n
+y = json.dumps(x)\n\n
+
+# Sonuç JSON olarak yazdırılır\n
+print(y)\n\n\n
+
+
+OUTPUT:\n
+>> {"name": "John", "age": 30, "city": "New York"}\n\n\n
+
+
+Aşağıdaki türlerdeki Python nesnelerini JSON stringine dönüştürebilirsiniz:\n\n
+
+ - dict\n
+ - list\n
+ - tuple\n
+ - string\n
+ - int\n
+ - float\n
+ - True\n
+ - False\n
+ - None\n\n
+
+Örnek:\n
+
+import json\n\n
+
+print(json.dumps({"name": "John", "age": 30}))\n
+print(json.dumps(["apple", "bananas"]))\n
+print(json.dumps(("apple", "bananas")))\n
+print(json.dumps("hello"))\n
+print(json.dumps(42))\n
+print(json.dumps(31.76))\n
+print(json.dumps(True))\n
+print(json.dumps(False))\n
+print(json.dumps(None))\n\n
+
+OUTPUT:\n
+>> {"name": "John", "age": 30}\n
+>> ["apple", "bananas"]\n
+>> ["apple", "bananas"]\n
+>> "hello"\n
+>> 42\n
+>> 31.76\n
+>> true\n
+>> false\n
+>> null\n\n
+
+Python\'dan JSON\'a dönüştürdüğünüzde, Python nesneleri aşağıdaki JSON (JavaScript) eşdeğerine dönüştürülür:\n\n
+
+	Python 	JSON\n\n
+
+	dict 	Object\n
+	list 	Array\n
+	tuple 	Array\n
+	str 	String\n
+	int 	Number\n
+	float 	Number\n
+	True 	true\n
+	False 	false\n
+	None 	null\n\n\n
+
+
+Örnek:\n\n
+
+import json\n\n
+
+x = {\n
+  "name": "John",\n
+  "age": 30,\n
+  "married": True,\n
+  "divorced": False,\n
+  "children": ("Ann","Billy"),\n
+  "pets": None,\n
+  "cars": [\n
+    {"model": "BMW 230", "mpg": 27.5},\n
+    {"model": "Ford Edge", "mpg": 24.1}\n
+  ]\n
+}\n\n
+
+print(json.dumps(x))\n\n
+
+OUTPUT:\n
+>> {"name": "John", "age": 30, "married": true, "divorced": false, "children": ["Ann","Billy"], "pets": null, "cars": [{"model": "BMW 230", "mpg": 27.5}, {"model": "Ford Edge", "mpg": 24.1}]}\n\n\n
+
+
+OUTPUT Formatı Biçimlendirme\n\n
+
+Yukarıdaki örnek bir JSON stringi yazdırır ancak girintiler ve satır kesmeleri olmadan okunması çok kolay değildir.\n\n
+
+Json.dumps () methodunun sonucu okumayı kolaylaştırmak için parametreleri vardır:\n\n
+
+json.dumps(x, indent=4)\n\n
+
+Ayırıcıları da tanımlayabilirsiniz, varsayılan değer (",", ":") şeklindedir; bu, her nesneyi ayırmak için virgül, boşluk ve anahtarları değerlerden ayırmak için iki nokta üst üste ve boşluk kullanmak anlamına gelir:\n\n\n
+
+
+Örnek:\n\n
+
+# Varsayılan ayırıcıyı değiştirmek için separators parametresini kullanın:\n\n
+
+json.dumps(x, indent=4, separators=(". ", " = "))\n\n\n
+
+
+OUTPUT Sıralama\n\n
+
+Json.dumps () methodu, sonuçtaki anahtarları sıralamak için parametrelere sahiptir\n\n
+
+Sonucun sıralanıp sıralanmayacağını belirtmek için sort_keys parametresini kullanın:\n\n
+
+Örnek:\n\n
+
+import json\n\n
+
+x = {\n
+  "name": "John",\n
+  "age": 30,\n
+  "married": True,\n
+  "divorced": False,\n
+  "children": ("Ann","Billy"),\n
+  "pets": None,\n
+  "cars": [\n
+    {"model": "BMW 230", "mpg": 27.5},\n
+    {"model": "Ford Edge", "mpg": 24.1}\n
+  ]\n
+}\n\n
+
+json.dumps(x, indent=4, sort_keys=True)\n\n\n
+
+
+OUTPUT:\n
+>> {\n
+    "age": 30,\n
+    "cars": [\n
+        {\n
+            "model": "BMW 230",\n
+            "mpg": 27.5\n
+        },\n
+        {\n
+            "model": "Ford Edge",\n
+            "mpg": 24.1\n
+        }\n
+    ],\n
+    "children": [\n
+        "Ann",\n
+        "Billy"\n
+    ],\n
+    "divorced": false,\n
+    "married": true,\n
+    "name": "John",\n
+    "pets": null\n
+}\n
+        </item>
+        <item>
+            RegEx veya Regular Expressions, bir arama deseni oluşturan karakter dizisidir.\n\n
+
+RegEx, bir stringin belirtilen arama desenini içerip içermediğini kontrol etmek için kullanılabilir.\n\n\n
+
+
+RegEx Modülü\n\n
+
+Python, Regular Expressions ile çalışmak için kullanılabilen re adlı yerleşik bir pakete sahiptir\n
+İstenilen python dosyasına rahatlıkla import edilebilir, Re modülünü içe aktardığınızda, normal ifadeleri kullanmaya başlayabilirsiniz:\n\n
+
+import re\n\n
+
+Örnek:\n\n
+
+# The ile başlayıp Turkey ile biten bir cümle olup olmadığını test edelim:\n\n
+
+import re\n\n
+
+txt = "The storm in Turkey"\n
+x = re.search("^The.*Turkey$", txt)\n\n
+
+if (x):\n
+  print("Evet, cümle eşleşti !!")\n
+else:\n
+  print("Hayır, eşleşme yok")\n\n\n
+
+
+OUTPUT:\n
+>> Evet, cümle eşleşti !!\n\n\n
+
+
+RegEx Fonksiyonları\n\n
+
+	Function 	Description\n\n
+
+	findall 	Tüm eşleşmelerin bulunduğu bir liste döndürür\n
+	search 		Herhangi bir eşleşmeyi, eşleşen obje(Match Object) olarak döndürür\n
+	split 		Her eşleşmede stringin bölündüğü bir liste döndürür\n
+	sub 		Bir veya daha fazla eşleşmeyi string ile değiştirir\n\n\n
+
+
+Meta Karakterleri\n\n
+
+	Character 	Description 					Example\n\n
+
+	[] 		Karakter seti					"[a-m]"\n
+	\ 		Özel karakterlerden kaçınmak için kullanılır 	"\d"\n
+	. 		herhangi bir karakter (yeni satır hariç)	"he..o"\n
+	^ 		Bununla başlayan				"^hello"\n
+	$ 		Bununla biten					"world$"\n
+	* 		0 veya daha fazla tekrar eden 			"aix*"\n
+	+ 		1 veya daha fazla tekrar eden 			"aix+"\n
+	{} 		Tam olarak belirtilen tekrar sayısı		"al{2}"\n
+	| 		Ya da						"falls|stays"\n
+	() 		Eşleştir ve grupla\n\n\n
+
+
+Özel Diziler\n\n
+
+	Character Description 							Example\n\n
+
+	\A 	Belirtilen karakterler dizenin başındaysa eşleşme döndürür 	"\AThe"\n
+	\b 	Belirtilen karakterlerin bir kelimenin başında veya sonunda olduğu bir eşleşme döndürür r"\bain"\n
+										r"ain\b"\n\n
+
+	\B 	Belirtilen karakterlerin bulunduğu, ancak bir sözcüğün başında (veya sonunda) OLMAYAN bir eşleşme döndürür r"\Bain"\n
+										r"ain\B"\n\n
+
+	\d 	Dizenin rakam içerdiği bir eşleşme döndürür (0-9 arası sayılar) "\d"\n
+	\D 	Dizenin rakam içermediği bir eşleşme döndürür 			"\D"\n
+	\s 	Dizenin boşluk karakteri içerdiği bir eşleşme döndürür 		"\s"\n
+	\S 	Dizenin boşluk karakteri içermediği bir eşleşme döndürür 	"\S"\n
+	\w 	Dizenin herhangi bir sözcük karakteri içerdiği bir eşleşme döndürür (a\'dan Z\'ye 		karakterler, 0-9 arası rakamlar ve alt çizgi _ karakteri)	"\w"\n
+	\W 	Dizenin kelime karakteri içermediği bir eşleşme döndürür 	"\W"\n
+	\Z 	Belirtilen karakterler dizenin sonundaysa eşleşme döndürür	"Spain\Z"\n\n\n
+
+
+Setler (Sets)\n\n
+
+	Set 	Description\n
+	[arn] 	Belirtilen karakterlerden birinin (a, r veya n) bulunduğu bir eşleşme döndürür\n
+	[a-n] 	Herhangi bir küçük harf için, a ve n arasında alfabetik olarak bir eşleşme döndürür\n
+	[^arn] 	A, r ve n hariç herhangi bir karakter için eşleşme döndürür\n
+	[0123] 	Belirtilen rakamlardan herhangi birinin (0, 1, 2 veya 3) bulunduğu bir eşleşme döndürür\n
+	[0-9] 	0 ile 9 arasındaki herhangi bir basamak için eşleşme döndürür\n
+	[0-5][0-9] 00 ve 59 arasındaki iki basamaklı sayılar için eşleşme döndürür\n
+	[a-zA-Z] A ve z, küçük harf VEYA büyük harf arasında alfabetik olarak herhangi bir karakter için eşleşme döndürür\n
+	[+] 	+, *,., |, (), $, {} Kümelerinin özel bir anlamı yoktur, bu nedenle [+] şu anlama gelir: dizedeki herhangi bir + karakteri için eşleşme döndürür\n\n\n
+
+
+findall() Fonksiyonu\n\n
+
+Tüm Eşleşmeyi liste olarak yazdıralım:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.findall("ai", txt)\n
+print(x)\n\n
+
+OUTPUT:\n
+>> [\'ai\', \'ai\']\n\n\n
+
+
+Liste, eşleşmeleri bulundukları sırayla içerir.\n
+Herhangi bir eşleşme bulunamazsa boş bir liste döndürülür:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.findall("Portugal", txt)\n
+print(x)\n\n
+
+OUTPUT:\n
+>> [] no match\n\n\n
+
+
+search() Fonksiyonu\n\n
+
+Bu fonksiyon bir eşleşme arar ve eşleşme varsa bir eşleşme nesnesi(match object) döndürür.\n
+Birden fazla eşleşme varsa, eşleşmenin yalnızca ilk tekrarlaması döndürülür:\n\n\n
+
+
+Örnek:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.search("\s", txt) # \s boşluk karakterini aratır\n\n
+
+print("İlk boşluk karakteri şu konumdadır:", x.start())\n\n
+
+OUTPUT:\n
+>> İlk boşluk karakteri şu konumdadır: 3\n\n
+
+# Eğer bir eşleşme olmazsa : None döndürülür\n\n\n
+
+
+split() Fonksiyonu\n\n
+
+Bu Fonksiyon stringin her eşleşmede bölündüğü bir liste döndürür:\n\n
+
+Örnek:\n\n
+
+ # Her boşlukta ayırma işlemi yapalım:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.split("\s", txt)\n
+print(x)\n\n
+
+OUTPUT:\n
+>> [\'The\', \'rain\', \'in\', \'Spain\']\n\n
+
+ # Maxsplit parametresini belirterek eşleşme sayısını kontrol edebilirsiniz:\n\n
+
+Örnek:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.split("\s", txt, 1) # Yalnızca ilk boşluk (1.) için eşleşir\n
+print(x)\n\n
+
+OUTPUT:\n
+>> [\'The\', \'rain in Spain\']\n\n\n
+
+
+sub() Fonksiyonu\n\n
+
+Bu fonksiyon eşleşmeleri istediğiniz metinle değiştirir:\n\n
+
+Örnek:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.sub("\s", "9", txt) # Boşlukları (\s) 9 karakteri ile değiştirir\n
+print(x)\n\n\n
+
+
+OUTPUT:\n
+>> The9rain9in Spain\n\n\n
+
+
+Ayrıca baştan başlayarak değişmesi istenen öğe sayısını belirtebilirsiniz:\n\n
+
+Örnek:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.sub("\s", "9", txt, 2)\n
+print(x)\n\n
+
+OUTPUT:\n
+>> The9rain9in Spain\n\n\n
+
+
+Eşleşme Objesi (Match Object)\n\n
+
+Eşleşme Nesnesi, arama ve sonuç hakkında bilgi içeren bir nesnedir.\n
+Not: Eşleşme yoksa, Eşleşme Nesnesi yerine None döndürülür.\n\n
+
+Örnek:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.search("ai", txt)\n
+print(x) #this will print an object\n\n
+
+OUTPUT:\n
+>> \u003c_sre.SRE_Match object; span=(5, 7), match=\'ai\'>\n\n\n
+
+
+Eşleşme nesnesi, arama ve sonuç hakkında bilgi almak için kullanılan özelliklere ve methodlara sahiptir:\n\n
+
+.span (), eşleşmenin başlangıç ​​ve bitiş konumlarını içeren bir tuple döndürür.\n
+.string,  fonksiyona iletilen stringi döndürür\n
+.group(), stringte eşleşmenin olduğu kısmını döndürür\n\n\n
+
+
+Örnek:\n\n
+
+# İlk eşleşme gerçekleşme konumunu (başlangıç ​​ve bitiş konumu) yazdıralım\n
+# RegEx, büyük "S" harfiyle başlayan kelimeleri arar:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.search(r"\bS\w+", txt)\n
+print(x.span())\n\n
+
+OUTPUT:\n
+>> (12, 17)\n\n\n
+
+
+Örnek:\n\n
+
+ # Stringin eşleşme olduğu kısmını yazdırın.\n
+ # RegEx, büyük "S" harfiyle başlayan kelimeleri arar:\n\n
+
+import re\n\n
+
+txt = "The rain in Spain"\n
+x = re.search(r"\bS\w+", txt)\n
+print(x.group())\n\n
+
+OUTPUT:\n
+>> Spain\n\n
+
+        </item>
+        <item>
+            PIP nedir?\n\n
+
+PIP, Python paketleri veya isterseniz modüller için bir paket yöneticisidir.\n
+Python sürüm 3.4 veya daha yenisi varsa, PIP varsayılan olarak dahil edilir.\n\n\n
+
+
+Paket nedir?\n\n
+
+Paket, bir modül için ihtiyacınız olan tüm dosyaları içerir.\n
+Modüller, projenize ekleyebileceğiniz Python kod kütüphaneleridir.\n\n\n
+
+
+PIP\'in kurulu olup olmadığını kontrol edin\n\n
+
+Komut satırınızı Python komut dosyası dizininin bulunduğu yere götürün ve aşağıdakileri yazın:\n\n
+
+ C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip --version \n\n
+
+Eğer pip yüklü değilse, internet tarayıcınızdan aratıp kolaylıkla indirebilirsiniz.\n\n\n\n
+
+
+
+Paket Listesini Yazdırma\n\n
+
+Sisteminizde yüklü olan tüm paketleri listelemek için list komutunu kullanın:\n\n
+
+C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip list\n\n
+
+OUTPUT:\n
+>>  Package         Version\n
+-----------------------\n
+camelcase       0.2\n
+mysql-connector 2.1.6\n
+pip             18.1\n
+pymongo         3.6.1\n
+setuptools      39.0.1\n\n\n\n
+
+
+
+Bir Paket Kullanma\n\n
+
+Paket kurulduktan sonra kullanıma hazırdır.\n
+"Camelcase" paketini projenize aktarın.\n\n
+
+Örnek:\n\n
+
+import camelcase\n\n
+
+c = camelcase.CamelCase()\n
+txt = "hello world"\n\n
+
+# txt nin içindeki her kelimenin baş harfini büyük harf yapar\n
+print(c.hump(txt)) \n\n\n
+
+
+OUTPUT:\n
+>> Hello World\n
+        </item>
+        <item>
+            Try bloğu, bir kod bloğunu hatalar için test etmenizi sağlar.\n
+Except bloğu, hatayı halletmenizi sağlar.\n
+Finally bloğu, try - except blokların sonucundan bağımsız olarak kodu çalıştırmanıza izin verir.\n\n\n
+
+
+Hata Yönetimi\n\n
+
+Bir hata oluştuğunda veya istisna olduğunda, Python normalde durur ve bir hata mesajı oluşturur.\n
+Bu istisnalar try ifadesi kullanılarak ele alınabilir:\n\n
+
+Örnek:\n\n
+
+try:\n
+  # x değeri tanımlı ise print işlemi yapar\n
+  print(x)\n
+except:\n
+  # try işleminde bir hata olursa except kodları yürütülür\n
+  print("Hata meydana geldi")\n\n\n
+
+
+OUTPUT:\n
+>> Hata meydana geldi\n\n\n
+
+
+Try bloğu bir hata verdiğinden, except bloğu yürütülür.\n
+Try bloğu olmadan, program çökecek ve bir hata oluşturacaktır:\n\n\n\n
+
+
+
+Birçok Hata Yönetimi\n\n
+
+İstediğiniz sayıda except bloğu tanımlayabilirsiniz, örn. özel bir hata türü için özel bir kod bloğu yürütmek istiyorsanız:\n\n
+
+Örnek:\n\n
+
+ # Try bloğu bir NameError hatası verirse, diğeri kalan diğer tüm hatalar için yürütülür:\n\n
+
+try:\n
+  print(x)\n
+except NameError:\n
+  # x tanımlı değil ise\n
+  print("NameError meydana geldi")\n
+except:\n
+  # Diğer hatalar\n
+  print("Başka bir hata var")\n\n
+
+OUTPUT:\n
+>> NameError meydana geldi\n\n\n
+
+
+Else\n\n
+
+Herhangi bir hata oluşmazsa çalıştırılacak kod bloğunu tanımlamak için else anahtar sözcüğünü kullanabilirsiniz:\n\n
+
+Örnek:\n\n
+
+ # Bu örnekte, try bloğu herhangi bir hata oluşturmuyor:\n\n
+
+try:\n
+  print("Hello")\n
+except:\n
+  print("Bir şeyler ters gitti")\n
+else:\n
+  print("Hiçbir hata yok")\n\n
+
+OUTPUT:\n
+>> Hello\n
+>> Hiçbir hata yok\n\n\n
+
+
+Finally\n\n
+
+Finally belirtilirse, try bloğunun bir hata verip vermemesine bakılmaksızın yürütülür.\n\n\n
+
+
+try:\n
+  print(x)\n
+except:\n
+  print("Bir şey ters gitti")\n
+finally:\n
+  print("Try - Except bloğu sonlandı")\n\n
+
+OUTPUT:\n
+>> Bir şey ters gitti\n
+>> Try - Except bloğu sonlandı\n\n
+
+ # Açılan nesneleri kapatmak ve kaynakları temizlemek için yararlı olabilir:\n\n
+
+try:\n
+  f = open("demofile.txt")\n
+  f.write("Lorum Ipsum")\n
+except:\n
+  print("Dosyaya yazarken bir hata oluştu")\n
+finally:\n
+  f.close()\n\n\n
+
+
+OUTPUT:\n
+>> Dosyaya yazarken bir hata oluştu\n\n\n
+
+
+Hata Döndürme (Raise an Exception)\n\n
+
+Bir Python geliştiricisi olarak, bir koşul oluştuğunda bir istisna atmayı seçebilirsiniz.\n
+Bir exception döndürmek (throw) için "raise" anahtar kelimesini kullanın.\n\n
+
+Örnek:\n\n
+
+x = -1\n\n
+
+if x \u003c 0:\n
+  raise Exception("Sorry, no numbers below zero")\n\n
+
+OUTPUT:\n
+>> Traceback (most recent call last):\n
+  File "demo_ref_keyword_raise.py", line 4, in \u003cmodule>\n
+    raise Exception("Sorry, no numbers below zero")\n
+Exception: Sorry, no numbers below zero\n
+
+        </item>
+        <item>
+            Python kullanıcı girişine izin verir.\n
+Kullanıcıdan girdi isteyebileceğimiz anlamına gelir.\n
+Yöntemler Python 3.6\'da Python 2.7\'den biraz farklıdır.\n\n
+
+Python 3.6 input () methodu kullanır.\n\n
+
+Python 2.7 raw_input () methodu kullanır.\n\n
+
+Aşağıdaki örnek kullanıcı adını ister ve kullanıcı adını girdiğinizde ekranda yazdırılır:\n\n\n
+
+
+Python 3.6\n\n
+
+username = input("Enter username:")\n
+print("Username is: " + username)\n\n\n
+
+
+Python 2.7\n\n
+
+username = raw_input("Enter username:")\n
+print("Username is: " + username)\n\n
+
+input () fonksiyonu söz konusu olduğunda Python yürütmeyi durdurur ve kullanıcı bir girdi yazıp gönderdiği (enterladığı) zaman devam eder.\n
+
+        </item>
+        <item>
+            Bir stringin beklendiği gibi görüntülendiğinden emin olmak için sonucu format () methodu ile biçimlendirebiliriz.\n\n\n
+
+
+String Format\n\n
+
+Format () methodu, bir stringin seçili bölümlerini biçimlendirmenize olanak tanır.\n\n
+
+Bazen bir metnin kontrol edilmeyen kısımları olabilir, belki bir veritabanından belki de kullanıcı girdisinden geliyor olduklarını bilemeyiz.\n\n
+
+Bu değerleri kontrol etmek için metne yer tutucuları (süslü parantezler {}) ekleyin ve değerleri format () methoduyla çalıştırın:\n\n
+
+Örnek:\n\n
+
+price = 49\n
+txt = "The price is {} dollars"\n
+print(txt.format(price))\n\n
+
+OUTPUT:\n
+>> The price is 49 dollars\n\n\n
+
+
+Değerin nasıl dönüştürüleceğini belirtmek için süslü parantez içine parametreler ekleyebilirsiniz:\n\n
+
+txt = "The price is {:.2f} dollars"\n\n\n
+
+
+Çoklu Değerler\n\n
+
+Daha fazla değer kullanmak istiyorsanız, format () methoduna daha fazla değer eklemeniz yeterlidir:\n\n
+
+print(txt.format(price, itemno, count))\n\n
+
+Örnek: \n\n
+
+quantity = 3\n
+itemno = 567\n
+price = 49\n
+myorder = "I want {} pieces of item number {} for {:.2f} dollars."\n
+print(myorder.format(quantity, itemno, price))\n\n\n
+
+
+OUTPUT:\n
+>> I want 3 pieces of item number 567 for 49.00 dollars. \n\n\n
+
+
+Index Numaraları\n\n
+
+Değerlerin doğru yer tutuculara yerleştirildiğinden emin olmak için index numaralarını (süslü parantez içindeki {0} bir sayı) kullanabilirsiniz\n\n
+
+Örnek:\n\n
+
+ quantity = 3\n
+itemno = 567\n
+price = 49\n
+myorder = "I want {0} pieces of item number {1} for {2:.2f} dollars."\n
+print(myorder.format(quantity, itemno, price))\n\n
+
+OUTPUT:\n
+>> I want 3 pieces of item number 567 for 49.00 dollars.\n\n\n
+
+
+Adlandırılmış Indexler\n\n
+
+Adlandırılmış indexler, {carname} küme parantezlerinin içine bir ad girerek de kullanabilirsiniz, ancak txt.format (carname = "Ford") parametre değerlerini iletirken adları kullanmanız gerekir:\n\n
+
+Örnek:\n\n
+
+myorder = "I have a {carname}, it is a {model}."\n
+print(myorder.format(carname = "Ford", model = "Mustang"))\n\n
+
+OUTPUT:\n
+>> I have a Ford, it is a Mustang. \n
+
+
+        </item>
+        <item>
+            Python\'da dosyalarla çalışmanın temel işlevi open () fonksiyonudur.\n
+Open() fonksiyonu iki parametre alır; dosyaadı ve modu.\n\n
+
+Bir dosyayı açmak için dört farklı yöntem (mod) vardır:\n\n\n
+
+
+"r" - Read -   Okumak için bir dosya açar, dosya yoksa hata verir\n\n
+
+"a" - Append - Eklemek için bir dosya açar, yoksa dosyayı oluşturur\n\n
+
+"w" - Write -  Yazmak için bir dosya açar, yoksa dosyayı oluşturur\n\n
+
+"x" - Create - Belirtilen dosyayı oluşturur, dosya varsa bir hata döndürür\n\n\n
+
+
+Ayrıca dosyanın ikili veya metin modu olarak işlenip işlenmeyeceğini belirleyebilirsiniz:\n\n\n
+
+
+"t" - Text - Yazı Modu\n\n
+
+"b" - Binary - Binary modu (resim vb)\n\n\n
+
+
+Sözdizimi (Syntax)\n\n
+
+Bir dosyayı okumak üzere açmak için dosyanın adını belirtmeniz yeterlidir:\n\n
+
+f = open("yazidosyasi.txt") = f = open("yazidosyasi.txt", "rt")\n\n
+
+ # Eğer dosya mevcut değilse hata döndürür.\n\n\n
+
+
+Dosya Açma\n\n
+
+Python dosyanız ile aynı klasörde bulunan aşağıdaki dosyaya sahip olduğumuzu varsayın:\n\n\n
+
+
+demofile.txt:\n\n
+
+Hello! Welcome to demofile.txt\n
+This file is for testing purposes.\n
+Good Luck!\n\n\n
+
+
+Dosyayı açmak için open () fonksiyonunu kullanın.\n
+Open () fonksiyonu, dosyanın içeriğini okumak için read () methoduna sahip olan bir dosya nesnesi döndürür:\n\n
+
+Örnek:\n\n
+
+f = open("demofile.txt", "r")\n
+print(f.read())\n\n
+
+OUTPUT:\n
+>> Hello! Welcome to demofile.txt\n
+>> This file is for testing purposes.\n
+>> Good Luck!\n\n\n
+
+
+Dosyadan Belli Parça Okumak\n\n
+
+Varsayılan olarak read () methodu metnin tamamını döndürür, ancak kaç karakter döndürmek istediğinizi de belirtebilirsiniz:\n\n
+
+Örnek:\n\n
+
+f = open("demofile.txt", "r")\n
+print(f.read(5))\n\n
+
+OUTPUT:\n
+>>\n
+Hello\n\n\n
+
+
+Satır Okuma\n\n
+
+Readline () methodunu kullanarak bir satır döndürebilirsiniz:\n\n
+
+Örnek:\n\n
+
+f = open("demofile.txt", "r")\n
+print(f.readline())\n\n
+
+OUTPUT:\n
+>> Hello! Welcome to demofile.txt\n\n\n
+
+
+Dosyanın satırları arasında döngü ile dolaşarak tüm dosyayı satır satır okuyabilirsiniz:\n\n
+
+Örnek:\n\n
+
+f = open("demofile.txt", "r")\n
+for x in f:\n
+  print(x)\n\n
+
+OUTPUT:\n
+>> Hello! Welcome to demofile.txt\n
+>> This file is for testing purposes.\n
+>> Good Luck!\n\n\n
+
+
+Dosya Kapatma\n\n
+
+Dosya ile işiniz bittiğinde dosyayı her zaman kapatmak iyi bir uygulamadır, dosya işlemlerinde try - except bloklarının kullanılması tavsiye edilir\n\n
+
+Örnek:\n\n
+
+f = open("demofile.txt", "r")\n
+print(f.readline())\n
+f.close()\n\n
+
+OUTPUT:\n
+>> Hello! Welcome to demofile.txt\n\n\n
+
+
+Dosya Oluşturma ve Yazma\n\n
+
+Varolan bir dosyaya yazmak için open () fonksiyonuna bir parametre eklemeniz gerekir:\n\n
+
+"a" - Append - Dosyanın sonuna ekler\n
+"w" - Write  - Tüm dosyayı silip üzerine yazar\n\n\n
+
+
+Append\n\n
+
+f = open("demofile2.txt", "a")\n
+f.write("Now the file has more content!")\n
+f.close()\n\n
+
+#open and read the file after the appending:\n
+f = open("demofile2.txt", "r")\n
+print(f.read())\n\n
+
+OUTPUT:\n
+>> Hello! Welcome to demofile2.txt\n
+>> This file is for testing purposes.\n
+>> Good Luck!Now the file has more content!\n\n\n
+
+
+Write\n\n
+
+f = open("demofile3.txt", "w")\n
+f.write("İçerik silindi")\n
+f.close()\n\n
+
+# yazılan dosyayı açıp okumak:\n
+f = open("demofile3.txt", "r")\n
+print(f.read())\n\n
+
+OUTPUT:\n
+>> İçerik silindi\n\n\n
+
+
+Yeni Dosya Oluşturma\n\n
+
+Python\'da yeni bir dosya oluşturmak için, aşağıdaki parametrelerden biriyle open() methodunu kullanın:\n\n
+
+"x" - Create - bir dosya oluşturur, dosya varsa bir hata döndürür\n\n
+
+"a" - Append - belirtilen dosya yoksa bir dosya oluşturur\n\n
+
+"w" - Write - belirtilen dosya yoksa bir dosya oluşturur\n\n\n
+
+
+Örnekler:\n\n
+
+file = open("myfile.txt", "x")\n\n
+
+file = open("myfile.txt", "w")\n\n\n
+
+
+Dosya Silme\n\n
+
+Bir dosyayı silmek için, OS modülünü içe aktarmalı(import) ve os.remove () fonksiyonunu çalıştırmalısınız:\n\n
+
+Örnek:\n\n
+
+import os\n
+os.remove("demofile.txt")\n\n\n
+
+
+Dosya Varlığı Kontrol \n\n
+
+Hata almamak için, dosyayı silmeye çalışmadan önce dosyanın var olup olmadığını kontrol edilmedilir.\n\n
+
+Örnek:\n\n
+
+ # Eğer dosya varsa, sil.\n\n
+
+import os\n
+if os.path.exists("demofile.txt"):\n
+  os.remove("demofile.txt")\n
+else:\n
+  print("The file does not exist")\n\n\n
+
+
+Klasör Silme\n\n
+
+Bir klasörün tamamını silmek için os.rmdir() methodunu kullanın:\n\n
+
+Örnek:\n\n
+
+import os\n
+os.rmdir("myfolder")\n\n
+
+Not: Yalnızca boş olan klasörler silinebilir\n
+        </item>
+    </string-array>
+</resources>

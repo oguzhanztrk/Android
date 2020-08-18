@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Tasarım</string>
+    <string-array name="python_icerik">
+        <item>Python Giriş</item>
+        <item>Python Değişkenler</item>
+        <item>Python Veri Türleri</item>
+        <item>Python Sayılar</item>
+        <item>Python Yapısal Dönüşümler (Casting)</item>
+        <item>Python Dizeler (Strings)</item>
+        <item>Python Mantıksal İfadeler(booleans)</item>
+        <item>Python Operatörler</item>
+        <item>Python Listeler </item>
+        <item>Python Tuples</item>
+        <item>Python Diziler (Sets)</item>
+        <item>Python Sözlükler (Dictionaries)</item>
+        <item>Python Koşullar (Conditions)</item>
+        <item>Python While Döngüsü </item>
+        <item>Python Fonksiyonlar</item>
+        <item>Python For Döngüsü </item>
+        <item>Python Lambda</item>
+        <item>Python Diziler (Arrays)</item>
+        <item>Python Sınıflar / Objeler (Class / Object)</item>
+        <item>Python Kalıtım (İnheritance)</item>
+        <item>Python Yineleyicileri (Iterators)</item>
+        <item>Python Kapsam (Scope)</item>
+        <item>Python Modülleri (Modules)</item>
+        <item>Python Tarih (Date)</item>
+        <item>Python JSON</item>
+        <item>Python Düzenli İfadeler (Regular Expressions)</item>
+        <item>Python PIP </item>
+        <item>Python Try - Except</item>
+        <item>Python Kullanıcı Girdisi (User İnput)</item>
+        <item>Python String Biçimlendirme (Formatting)</item>
+        <item>Python File Handling</item>
+
+    </string-array>
+    <string-array name="java_icerik">
+        <item>java</item>
+        <item>python2</item>
+        <item>python3</item>
+        <item>python4</item>
+    </string-array>
+
+    <string-array name="java_mesaj">
+        <item>j1</item>
+        <item>j2</item>
+        <item>j3</item>
+        <item>j4</item>
+    </string-array>
+
+</resources>
+

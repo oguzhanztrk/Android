@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="baslat">Başlat</string>
+    <string name="durdur">Durdur</string>
+    
+    
+    <array name="parcalar">
+        <item>neureich</item>
+        <item>neureich</item>
+        <item>Travis Scoot-Highest in the room</item>
+        <item>neureich</item>
+        <item>neureich</item>
+        <item>neureich</item>
+        <item>neureich</item>
+        <item>neureich</item>
+        <item>neureich</item>
+
+    </array>
+</resources>
